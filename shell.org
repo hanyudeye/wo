@@ -1,0 +1,45 @@
+
+
+shell 是计算机在终端环境下的交互界面，因为图形界面是后出的，所以终端界面也称 CLI,图形界面也称 GUI
+The command-line interface is often referred to as CLI (Command-Line Interface). 😊
+
+it seem like YourName: ~$_  ，and you can input some words after the $ symbol
+
+use shell can do something
+
+1. print the current date and time
+  
+#+begin_src shell
+ ~$ date 
+#+end_src
+   
+it will print ~XX 年 XX 月 XX 时 XX 分~
+
+2. cd directory
+#+begin_src bash
+ ~$ cd XXpath 
+#+end_src
+
+   
+so, CLI or shell , you can use special letter to interactive(交互) with computer
+
+what is the meaning of the word ,tldr?  stands for  summary
+
+3. man
+#+begin_src bash
+ ~$ man XX 
+#+end_src
+
+manual something can print some summary   
+
+4. some difficult command can do complex work
+
+#+begin_src bash
+  ~$ find . -name "*.py" -exec grep -l "TODO" {} \;
+  ~$ awk '{print $2}' file
+#+end_src
+   
+
+but it's too different,and not easy to memorise ,aha ...
+
+omg! end!
