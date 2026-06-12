@@ -9,9 +9,13 @@
 
 我现在是资本家，AI是给我打工的 codex 或 claude
 
+
 弄一个营销技能，或提示词，但我说营销某个产品时，他会做营销方案
 
-linux 中如何打开 chatgpt呢
+[x]v2raya 无法访问 chatgpt 
+
+安装图形版本，关闭 
+https://github.com/2dust/v2rayN
 
 
 ```python
