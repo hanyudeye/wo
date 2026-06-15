@@ -99,3 +99,8 @@
 
 ---
 *(Action Items Complete. Awaiting next command.)*
+
+弄一个营销技能，或提示词，但我说营销某个产品时，他会做营销方案
+
+学习下 gptel agent 和 openhands 的使用
+
