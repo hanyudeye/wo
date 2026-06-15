@@ -1,3 +1,6 @@
+# 技能
+https://github.com/obra/superpowers.git
+
 # 如何使用 openhands 自动写博客
 
 OpenHands 自动写博客最有效的方式不是直接说：
