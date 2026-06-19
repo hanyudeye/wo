@@ -7,7 +7,7 @@ categories: ['']
 draft: true
 ---
 
-# chrome 浏览器开启 genimi
+# chrome 浏览器开启 gemini
 
 1. 找到这个文件：
 
