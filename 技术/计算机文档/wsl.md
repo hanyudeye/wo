@@ -40,3 +40,29 @@ The error "Parameter format not correct - "" " typically occurs when `wslview` p
    `explorer.exe "$(wslpath -w a.png)"`
 
 If the file is missing, `wslview` will still try to open it, causing the Windows error.
+
+## link-hint-open-link-at-point 如何调用 windows 里面的浏览器打开链接
+
+方案一：用 wslview（推荐）
+``` elisp
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "/usr/bin/wslview")
+```
+wslview 是 WSL 官方工具，会自动调用 Windows 默认浏览器，无需写死路径。
+
+方案二：直调 Windows 浏览器 exe
+``` elisp
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "/mnt/c/Program Files/Google/Chrome/Application/chrome.exe")
+```
+
+方案三：不改全局，只改 link-hint
+如果你只想 link-hint 用 Windows 浏览器，其他保持默认：
+``` elisp
+(advice-add 'link-hint-open-link-at-point :around
+            (lambda (orig-fn &rest args)
+              (let ((browse-url-browser-function 'browse-url-generic)
+                    (browse-url-generic-program "/usr/bin/wslview"))
+                (apply orig-fn args))))
+```
+加完后重启 Emacs 或 eval-buffer 即可。
