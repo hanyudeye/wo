@@ -4,6 +4,12 @@
 - 晚上学习 7点-10点 3小时呢 (尝试) - 惩罚机制 （不学习一天或生气一次 ，钉一个钉子，一天不生气，拔一个钉子，买钉子和锤子）
 - 
 
+- 打开 tmux , 左右分屏 emacs | opencode ,opencode init 
+- 安装 新闻获取 skill https://github.com/cclank/news-aggregator-skill
+- 这个也是新闻聚合 https://github.com/mvanhorn/last30days-skill (这个有风险，等风险降低)
+
+- https://github.com/jnMetaCode/superpowers-zh.git  查看这个技能，中文方便看
+
 ## 看书 (书架书看完)
 
 
