@@ -7,11 +7,11 @@
 - 打开 tmux , 左右分屏 emacs | opencode ,opencode init 
 - 安装 新闻获取 skill https://github.com/cclank/news-aggregator-skill
 - 这个也是新闻聚合 https://github.com/mvanhorn/last30days-skill (这个有风险，等风险降低)
-
 - https://github.com/jnMetaCode/superpowers-zh.git  查看这个技能，中文方便看
 
-## 看书 (书架书看完)
+- todo 配置自己的初始化 emacs.d，做一些学习
 
+## 看书 (书架书看完)
 
 
 
@@ -29,10 +29,10 @@
 ## 旅行
 
 - 流量卡
-- 一次性雨衣 
+- 口罩
+- 一次性雨衣 (雨伞代替) 
 - 垃圾袋
 - 餐巾纸
 - 零钱包
-- 口罩
 - 入境QR码 
 - 充电宝

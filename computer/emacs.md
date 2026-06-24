@@ -149,3 +149,145 @@ Emacs 安装、基本快捷键、文件操作、缓冲区、退出
 
 完成这些任务后，输入 **继续**。
 
+继续
+
+
+**第三阶段：文本对象与高效编辑**
+
+**学习目标**  
+掌握区域选择、矩形编辑、键盘宏录制回放，以及使用 Dired 进行基础文件管理，大幅提升编辑效率。
+
+**具体任务节点**  
+1. 学习区域选择：`C-SPC` 设置标记，移动光标选择区域，然后执行剪切 (`C-w`)、复制 (`M-w`)、删除 (`C-d` 或 `DEL`)。  
+2. 学习操作文本对象：  
+   - 单词：`M-d` 删除单词，`M-DEL` 向后删除单词  
+   - 行：`C-k` 删除到行尾，`C-a` `C-k` 删除整行  
+   - 段落：`M-h` 选中段落，`M-q` 重新填充段落  
+   - 括号：`M-(` 插入一对括号，`C-M-f` 跳转匹配括号  
+3. 学习矩形选择与编辑：  
+   - `C-x SPC` 进入矩形选择模式  
+   - `C-x r t` 在矩形区域插入文本  
+   - `C-x r k` 删除矩形内容  
+   - `C-x r y` 粘贴矩形  
+4. 学习键盘宏：  
+   - `F3` 开始录制，`F4` 停止录制  
+   - `F4` 重复执行最近一次宏  
+   - `C-u` + 数字 + `F4` 重复指定次数  
+   - `C-x C-k n` 为宏命名，`C-x C-k e` 编辑宏  
+5. 学习 Dired 文件管理器：  
+   - `C-x d` 打开当前目录  
+   - `d` 标记删除，`x` 执行删除  
+   - `+` 创建目录，`C` 复制，`R` 重命名/移动  
+   - `m` 标记文件，`u` 取消标记  
+   - `g` 刷新目录  
+6. 了解撤销树 (可选)：`M-x undo-tree-visualize` 查看撤销分支。
+
+**推荐查阅知识点关键词**  
+区域标记、矩形编辑、键盘宏、Dired、文本对象操作、undo-tree
+
+**实践任务**  
+- 创建一个文本文件，包含多行对齐的表格（例如空格分隔的列），使用矩形选择插入一列新数据或删除一列。  
+- 录制一个宏：对多行依次执行“移动到行首，插入 `- `，移动到下一行”。然后对 10 行重复运行。  
+- 使用 Dired 打开一个文件夹，将其中所有 .txt 文件标记后复制到另一个新创建的目录。  
+- 尝试使用 `M-x` 执行 `undo-tree-visualize`，观察撤销历史（如果你的 Emacs 已加载 undo-tree）。
+
+**验收标准**  
+- 能熟练使用 `C-SPC` 选择任意范围区域并执行复制/剪切/粘贴。  
+- 能用矩形选择修改列对齐内容。  
+- 能录制并回放键盘宏，可重复执行多次。  
+- 能用 Dired 完成基本的文件查看、复制、移动、删除操作。  
+
+完成以上任务后，输入 **继续**。
+
+继续
+
+**第四阶段：包管理与基本扩展**
+
+**学习目标**  
+掌握 Emacs 内置包管理器 `package.el` 的使用，学会添加第三方包源、安装/卸载扩展包，并了解如何通过包增强 Emacs 基础功能。
+
+**具体任务节点**  
+1. 配置 `package.el`，添加 MELPA 源：  
+   - 在 `init.el` 中添加：  
+     ```elisp
+     (require 'package)
+     (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+     (package-initialize)
+     ```  
+   - 执行 `M-x eval-buffer` 或重启 Emacs，然后执行 `M-x package-refresh-contents` 刷新包列表。  
+
+2. 学习使用 `M-x list-packages` 浏览包列表：  
+   - 按 `i` 标记安装，`d` 标记删除，`x` 执行标记操作。  
+   - 搜索包名：`/` 输入关键字过滤。  
+
+3. 安装一个主题包（如 `monokai-theme` 或 `dracula-theme`），并启用：  
+   - `M-x load-theme`，输入主题名，选择启用。  
+   - 确保主题在启动时自动加载（在 `init.el` 中添加 `(load-theme 'dracula t)`）。  
+
+4. 安装以下增强包中的至少一个：  
+   - `which-key`：按键时弹出可用快捷键提示。  
+   - `ivy` 或 `counsel`：增强 `M-x`、文件查找、Minibuffer 补全。  
+   - `smex`：更智能的 `M-x`（选装）。  
+
+5. 学习如何卸载包：`M-x package-delete`，或在 `list-packages` 中标记删除。  
+
+6. 了解如何使用 `customize-group` 修改包的选项（`M-x customize-group which-key`）。  
+
+**推荐查阅知识点关键词**  
+`package.el`、MELPA、`load-theme`、`which-key`、`ivy`、`counsel`、`customize-group`  
+
+**实践任务**  
+- 成功添加 MELPA 源并刷新后，安装 `monokai-theme` 和 `which-key`。  
+- 配置 `init.el` 使主题和 `which-key` 在启动时自动加载（在配置中启用 `(which-key-mode)`）。  
+- 测试 `which-key`：按 `C-x` 后查看弹出提示。  
+- 如果安装了 `ivy`，体验 `C-x b` 和 `C-x C-f` 的增强补全。  
+
+**验收标准**  
+- 你的 `init.el` 中包含正确的 MELPA 源配置。  
+- 重启 Emacs 后，主题自动生效，`C-x` 后显示 `which-key` 提示。  
+- 能通过 `list-packages` 查找、安装、卸载任意包。  
+
+完成所有节点后，输入 **继续**。
+
+继续
+
+
+**第五阶段：Org mode 基础与 Git 集成**
+
+**学习目标**  
+掌握 Org mode 的基本组织功能（大纲、列表、任务管理），并学会在 Emacs 中使用 Magit 进行 Git 版本控制操作。
+
+**具体任务节点**  
+1. **Org mode 基础**  
+   - 创建 `.org` 文件，体验大纲结构：用 `*` 标题，`TAB` 折叠/展开，`M-RET` 新建标题，`M-<UP>/<DOWN>` 移动标题。  
+   - 学会创建待办事项：`C-c C-t` 切换 TODO 状态，`C-c C-s` 插入时间戳，`C-c C-d` 插入截止日期。  
+   - 了解检查列表：`- [ ]` 任务，`C-c C-c` 切换完成状态。  
+   - 将 Org 文件导出为 HTML 或 PDF：`C-c C-e` 选择导出后端。
+
+2. **Magit 版本控制**  
+   - 安装 Magit：`M-x package-install magit`。  
+   - 在 Git 仓库目录中执行 `M-x magit-status`（或 `C-x g`）打开 Magit 状态缓冲区。  
+   - 学习基本操作：`s` 暂存文件，`c c` 编写并提交，`P u` 推送到远程。  
+   - 查看历史：`l l` 打开日志浏览器，用 `n`/`p` 导航提交，`RET` 查看详情。  
+   - 分支管理：`b c` 创建分支，`b s` 切换分支，`m m` 合并分支。
+
+3. **模式定制**  
+   - 学会为特定文件扩展名设置关联的 major mode：`(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))`。  
+   - 安装 `markdown-mode` 并确保 .md 文件自动以 Markdown 模式打开。
+
+**推荐查阅知识点关键词**  
+Org mode、`M-RET`、TODO、折叠、`C-c C-e`、Magit、`magit-status`、`auto-mode-alist`、markdown-mode
+
+**实践任务**  
+- 创建一个 `project.org` 文件，用 Org 大纲列出本周的任务，包含至少两个 TODO 项和一个完成项（DONE），添加时间戳。  
+- 将该文件导出为 HTML，并在浏览器中打开查看效果。  
+- 初始化或打开一个已有的 Git 仓库，使用 Magit 完成一次修改-暂存-提交的完整流程，并查看日志。  
+- 安装 `markdown-mode`，使 `test.md` 文件自动以 Markdown 模式打开。
+
+**验收标准**  
+- 能用 Org 大纲快速组织多层结构，并管理 TODO 状态。  
+- 能通过 Magit 完成 Git 基本操作（暂存、提交、推送、查看日志）。  
+- `.md` 文件自动关联到 `markdown-mode`，并能正常编辑预览。  
+
+完成这些任务后，输入 **继续**。
+
