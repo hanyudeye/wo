@@ -9,12 +9,16 @@
 - 这个也是新闻聚合 https://github.com/mvanhorn/last30days-skill (这个有风险，等风险降低)
 - https://github.com/jnMetaCode/superpowers-zh.git  查看这个技能，中文方便看
 
-- todo emacs 配置自己的初始化 emacs.d目录，并设置打开参数，做一些学习
-- todo tmux continuum 启动恢复
+- done emacs 配置自己的初始化 emacs.d目录，并设置打开参数，做一些学习
+- done tmux continuum 启动恢复
 - todo 声音克隆
 
-## 看书 (书架书看完)
 
+
+
+
+
+## 看书 (书架书看完)
 
 
 
