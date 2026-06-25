@@ -51,3 +51,74 @@ set-option -g mouse-select-pane on
    ```
 
 您的工作环境和所有窗口（Panes/Windows）都会恢复到断开连接前的状态。
+
+## 安装插件 
+
+1. 在 tmux 里按 <prefix> + r（即先按 Ctrl+b，松开后再按 r）
+2. 观察底部状态栏，应该会显示 "Installing tpm and plugins..." 等提示
+3. 安装完成后底栏会显示 "Done installing tpm and plugins..."
+
+如果 <prefix> + r 没反应，也可以直接退出所有 tmux 会话后执行：
+tmux kill-server && tmux
+
+
+## tmux 如何保存打开的窗口状态
+
+
+1. tmux 自带：没有原生保存功能，但可以用脚本保存布局：
+
+tmux list-windows -a -F "#{window_index} #{pane_index} #{pane_current_command}"
+配合 tmux new-session + tmux send-keys 手动恢复。
+
+2. 插件（推荐）：tmux-resurrect (https://github.com/tmux-plugins/tmux-resurrect)
+- 保存：prefix + Ctrl-s
+- 恢复：prefix + Ctrl-r
+- 保存内容包含窗口、面板、路径、运行程序等
+
+配合 tmux-continuum (https://github.com/tmux-plugins/tmux-continuum) 可实现自动每隔 15 分钟保存 + 开机自动恢复。
+
+## key short
+
+C-b C-b     Send the prefix key
+C-b C-o     Rotate through the panes
+C-b C-z     Suspend the current client
+C-b Space   Select next layout
+C-b !       Break pane to a new window
+C-b #       List all paste buffers
+C-b $       Rename current session
+C-b &       Kill current window
+C-b '       Prompt for window index to select
+C-b (       Switch to previous client
+C-b )       Switch to next client
+C-b ,       Rename current window
+C-b .       Move the current window
+C-b /       Describe key binding
+C-b 0       Select window 0
+C-b 1       Select window 1
+C-b 2       Select window 2
+C-b 3       Select window 3
+C-b 4       Select window 4
+C-b 5       Select window 5
+C-b 6       Select window 6
+C-b 7       Select window 7
+C-b 8       Select window 8
+C-b 9       Select window 9
+C-b :       Prompt for a command
+C-b ;       Move to the previously active pane
+C-b =       Choose a paste buffer from a list
+C-b ?       List key bindings
+C-b C       Customize options
+C-b D       Choose and detach a client from a list
+C-b E       Spread panes out evenly
+C-b M       Clear the marked pane
+C-b [       Enter copy mode
+C-b ]       Paste the most recent paste buffer
+C-b d       Detach the current client
+C-b f       Search for a pane
+C-b i       Display window information
+C-b o       Select the next pane
+C-b q       Display pane numbers
+C-b s       Choose a session from a list
+C-b t       Show a clock
+C-b w       Choose a window from a list
+C-b x       Kill the active pane

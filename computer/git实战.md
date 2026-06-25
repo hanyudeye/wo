@@ -75,3 +75,33 @@ git config pull.ff only        # 以后只接受快进（保守，逼你手动�
 如果你想这次解决，可以直接：
 git pull --rebase   # 或者 git pull --no-rebase
 
+## .gitignore 忽略某个文件夹，然后排除忽略那个文件夹里某些文件
+
+标准写法：
+
+```
+# 忽略 mydir/ 下所有内容
+mydir/*
+
+# 但保留某些文件
+!mydir/keep-me.txt
+!mydir/.gitkeep
+```
+
+关键规则：
+
+| 规则 | 说明 |
+|------|------|
+| 用 `mydir/*` 而非 `mydir/` | `mydir/` 会忽略整个目录，Git 不进入该目录，导致 `!` 排除失效 |
+| `!` 排除只对已追踪的文件生效 | 先恢复目录，再恢复文件 |
+| 排除不递归 | `mydir/*` 只匹配直接子级，更深层用 `mydir/**/*` |
+
+如需恢复深层文件：
+
+```
+mydir/*
+!mydir/.gitkeep
+!mydir/subdir/
+!mydir/subdir/important.txt
+```
+
