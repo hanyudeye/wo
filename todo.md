@@ -5,4 +5,3 @@
 
 一次买入voo,qqq 5wan
 
-在 wsl 终端打开图片
