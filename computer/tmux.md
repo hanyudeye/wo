@@ -122,3 +122,7 @@ C-b s       Choose a session from a list
 C-b t       Show a clock
 C-b w       Choose a window from a list
 C-b x       Kill the active pane
+
+## tmux 状态栏 不要显示 用户名和计算机名
+
+移除 .tmux.conf.local:274 中的 #{username}#{root} 和 #{hostname}。重载 tmux 配置（<prefix> + r）即可生效。

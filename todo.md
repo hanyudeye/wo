@@ -12,8 +12,10 @@
 - done emacs 配置自己的初始化 emacs.d目录，并设置打开参数，做一些学习
 - done tmux continuum 启动恢复
 - todo 声音克隆
+- todo 网络抓包工具 和 v2ray
 
 
+- todo tmux 状态栏 不要显示 用户名和计算机名
 
 
 
