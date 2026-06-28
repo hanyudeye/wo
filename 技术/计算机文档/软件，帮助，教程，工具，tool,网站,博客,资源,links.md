@@ -43,3 +43,6 @@ select-layout even-vertical 上下布局
 libretranslate --update-models --load-only zh,en --host 0.0.0.0 --port 5005
 
 
+## 快捷键
+
+https://github.com/search?q=hello&type=repositories
