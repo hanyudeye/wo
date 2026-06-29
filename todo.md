@@ -12,12 +12,14 @@
 - done emacs 配置自己的初始化 emacs.d目录，并设置打开参数，做一些学习
 - done tmux continuum 启动恢复
 - done tmux 状态栏 不要显示 用户名和计算机名
+- done 做一个 linux waylend鼠标手势，同 wgestures，没有同类型的工具
 - todo 声音克隆
 - todo 网络抓包工具 和 v2ray
-- todo 做一个 linux waylend鼠标手势，同 wgestures
 
 
 - 假如我身边就是机器人，政府怎么问他收税，他们除了电，还有其他需求吗，他们怎么进行经济活动
+
+- 添加链接
 
 
 ## 看书 (书架书看完)
@@ -35,7 +37,7 @@
 
 ## 旅行
 
-- 流量卡
+- 流量卡 (20~50 7天)
 - 口罩
 - 一次性雨衣 (雨伞代替) 
 - 垃圾袋

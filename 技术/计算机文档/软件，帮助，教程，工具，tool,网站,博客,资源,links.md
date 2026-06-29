@@ -46,3 +46,9 @@ libretranslate --update-models --load-only zh,en --host 0.0.0.0 --port 5005
 ## 快捷键
 
 https://github.com/search?q=hello&type=repositories
+
+https://www.quora.com/search?q=interest&type=question
+
+https://www.reddit.com/search/?q={query}
+
+http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={query}
