@@ -14,29 +14,6 @@ argos-translate-gui
 
 https://github.com/yingDev/WGestures/releases
 
-## 文件校验
-
-### md5/SHA256
-
-```powershell
-Get-FileHash WeChatSetup.exe -Algorithm MD5
-Get-FileHash WeChatSetup.exe -Algorithm SHA256
-```
-
-## 打开系统剪切板
-
-```powershell
-Win+v
-Get-Clipboard
-```
-
-## tmux
-
-命令:
-
-select-layout even-horizontal 左右布局
-select-layout even-vertical 上下布局
-
 ## 翻译 libretranslate
 
 更新模块
@@ -45,10 +22,12 @@ libretranslate --update-models --load-only zh,en --host 0.0.0.0 --port 5005
 
 ## 快捷键
 
-https://github.com/search?q=hello&type=repositories
+https://github.com/search?q={query}&type=repositories
 
-https://www.quora.com/search?q=interest&type=question
+https://www.quora.com/search?q={query}&type=question
 
 https://www.reddit.com/search/?q={query}
 
 http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={query}
+
+https://www.tiktok.com/search/video?q={query}

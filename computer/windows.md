@@ -124,3 +124,18 @@ netstat -ano | findstr :8080
 # 看到 PID 后：
 taskkill /PID <PID> /F
 ```
+
+## 打开系统剪切板
+
+```powershell
+Win+v
+Get-Clipboard
+```
+
+### md5/SHA256文件校验
+
+```powershell
+Get-FileHash WeChatSetup.exe -Algorithm MD5
+Get-FileHash WeChatSetup.exe -Algorithm SHA256
+```
+
