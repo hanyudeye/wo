@@ -123,3 +123,4 @@ alias vanillamacs='emacs -q'
 alias myemacs='emacs --init-directory ~/me/config/emacs/emacs.d'
 
 
+(elfeed-org)
