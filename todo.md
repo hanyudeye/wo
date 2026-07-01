@@ -13,14 +13,27 @@
 - done tmux continuum 启动恢复
 - done tmux 状态栏 不要显示 用户名和计算机名
 - done 做一个 linux waylend鼠标手势，同 wgestures，没有同类型的工具
+- done 添加链接
 - todo 声音克隆
-- todo 网络抓包工具 和 v2ray
 - todo 把实用工具转成初学者文档并润色转语音
+- todo 安装游戏手柄映射
+- todo 配社交 erc 和 mastodon
+
+     (erc :init flyspell-mode nil
+          :variables
+          erc-server-list '(
+                            ("irc.freenode.net"
+                             :port "6697"
+                             :ssl t
+                             :nick "some-user"
+                             :password "secret")
+                            ("irc.libera.chat"
+                             :port "6697" :ssl t
+                             :nick "你的昵称")))
+
 
 - 假如我身边就是机器人，政府怎么问他收税，他们除了电，还有其他需求吗，他们怎么进行经济活动
 
-- 添加链接
-- 
 
 
 ## 看书 (书架书看完)

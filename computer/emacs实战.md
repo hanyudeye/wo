@@ -122,5 +122,40 @@ alias vanillamacs='emacs -q'
 
 alias myemacs='emacs --init-directory ~/me/config/emacs/emacs.d'
 
+## spacemacs 里有什么好玩的社交应用
 
-(elfeed-org)
+### 哪个 IRC 网络人最多
+
+| 排名 | 网络 | 日均在线 |
+|------|------|----------|
+| 1 | **Libera.Chat** | ~30,000 |
+| 2 | OFTC | ~17,000 |
+| 3 | Undernet | ~15,000 |
+| 4 | hackint | ~10,000 |
+
+**Libera.Chat** 是当前最大的 IRC 网络，也是绝大多数 FOSS 项目（包括 Emacs）的大本营。#emacs、#spacemacs 都在这里。`irc.libera.chat:6697`（SSL）。
+
+### IRC — ERC 层（推荐）
+
+Spacemacs 官方 IRC 层，基于 Emacs 内置 ERC，最成熟、功能最全。
+
+| 特性 | 说明 |
+|------|------|
+| 频道 | `+chat/erc`（官方，非社区） |
+| 高亮 | nick 高亮、图片内联、YouTube 缩略图 |
+| 认证 | SASL 认证、authinfo.gpg 加密 |
+| 通知 | DBUS 通知 |
+| 其他 | 日志、社交图谱 |
+
+**启用**（`dotspacemacs-configuration-layers` 中）：
+
+```elisp
+(erc :variables
+     erc-server-list '(("irc.libera.chat"
+                        :port "6697" :ssl t
+                        :nick "你的昵称")))
+```
+
+密码放 `~/.authinfo.gpg`，不要明文。启用后 `SPC a c i e` 启动。
+
+> 另一个官方层是 `rcirc`（`+chat/rcirc`），更轻量。Circe **没有** 官方层（issue #4231 从未合并），需要自己配 private layer。

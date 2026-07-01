@@ -37,3 +37,15 @@
 
 所以 Wayland 下做手势工具，要么靠桌面环境自己提供 API（如 KDE InputActions），要么通过 libei 协议获取权限（正在推进，还未广泛落地）。这是**隐私 vs 功能**的经典取舍，Wayland 选了前者。
 
+## ubuntu 下游戏手柄映射管理软件
+
+| 软件 | 说明 |
+|------|------|
+| **sc-controller** | Steam Controller 及其他手柄的键鼠映射，GUI 图形化，功能最强 |
+| **jstest-gtk** | 测试手柄按键、校准轴 |
+| **evdev-joystick** | 用于校准手柄（jscal） |
+| **antimicroX** | 手柄按键 → 键盘/鼠标映射，适合无原生手柄支持的游戏 |
+| **steam** | 自带 Controller Configurator，支持 Xbox/PS/NS 手柄全面映射 |
+| **input-remapper** | 现代映射工具，GUI 直观，支持按键组合、鼠标模拟 |
+
+**推荐：** 先用 `jstest-gtk` 确认手柄被识别，然后 `sc-controller`（Steam 系）或 `input-remapper`（通用映射）按需使用。
