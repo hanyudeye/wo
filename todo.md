@@ -14,10 +14,11 @@
 - done tmux 状态栏 不要显示 用户名和计算机名
 - done 做一个 linux waylend鼠标手势，同 wgestures，没有同类型的工具
 - done 添加链接
+- done 安装游戏手柄映射
 - todo 声音克隆
 - todo 把实用工具转成初学者文档并润色转语音
-- todo 安装游戏手柄映射
 - todo 配社交 erc 和 mastodon
+- todo 治疗皮肤病
 
      (erc :init flyspell-mode nil
           :variables
