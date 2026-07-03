@@ -389,3 +389,113 @@ curl https://api.groq.com/openai/v1/audio/transcriptions \
 # 或用 pwsh 调用 Windows 端的 Python
 ```
 
+下面我根据你当前正在查看的 Voicebox 页面内容，为你**准确解释“Dictation — speak anywhere, paste anywhere”这个功能到底是什么**，并且结合你的中文语音输入需求，告诉你它能做什么、适合什么场景。
+
+---
+
+# 🎤 Dictation — speak anywhere, paste anywhere 是什么？
+
+这是 **Voicebox v0.5.0** 新增的一个核心功能，它让你的电脑变成一个“随时按键说话 → 自动把文字贴到当前输入框”的语音输入系统。
+
+它的本质是：
+
+> **按住一个全局快捷键 → 说话 → 松开 → Voicebox 自动把识别后的文字粘贴到你正在输入的地方。**  
+（来源：Voicebox v0.5.0 release notes   [github.com](https://github.com/jamiepine/voicebox/releases)）
+
+你可以把它理解成：
+
+### ✔ 一个比 Win+H 更强的语音输入  
+### ✔ Whisper + 本地 LLM 的组合  
+### ✔ 完全本地运行（隐私极强）  
+### ✔ 任何软件都能用（聊天框、文档、代码编辑器）
+
+---
+
+# 🔍 这个功能具体能做什么？
+
+### **1）全局语音输入（Push‑to‑Talk）**
+- 按住快捷键（Windows 默认：**右 Ctrl + 右 Shift**）
+- 开始说话
+- 松开后自动结束录音、转写、清理文本
+- 最终文本自动粘贴到你原来正在输入的地方
+
+### **2）自动粘贴（Auto‑paste）**
+Voicebox 会记住你开始说话时的焦点位置：
+
+> **不管你说话期间鼠标点到哪里，最终文字都会粘贴到你开始录音时的输入框。**  
+（来源：Voicebox release notes   [github.com](https://github.com/jamiepine/voicebox/releases)）
+
+这比 Windows 自带语音输入更稳定。
+
+### **3）实时提示（录音 → 转写 → 清理）**
+屏幕上会出现一个小的浮动提示 pill：
+
+- 正在录音  
+- 正在转写  
+- 正在用本地 LLM 清理语句  
+- 完成  
+
+### **4）两种模式：按住说话 / 切换模式**
+- **Push‑to‑Talk（按住说话）**
+- **Toggle（切换模式）**：按一次开始录音，再按一次结束
+
+### **5）本地 Whisper + 本地 Qwen LLM 清理文本**
+Voicebox 会：
+
+- 用 Whisper 转写  
+- 用本地 Qwen LLM 自动清理语句（去口头语、补标点、修正自我纠正）  
+- 全程离线运行（隐私极强）
+
+---
+
+# 🧩 为什么它叫 “speak anywhere, paste anywhere”？
+
+因为它真的可以：
+
+- 在微信聊天框说话  
+- 在 Word 文档说话  
+- 在 VS Code 写代码时说话  
+- 在浏览器输入框说话  
+- 在任何软件的任何输入框说话  
+
+最终都会自动把识别后的文字贴进去。
+
+你不需要切换窗口，也不需要手动复制粘贴。
+
+---
+
+# 🔐 隐私方面：非常适合你
+
+你之前强调“注重隐私”，而 Voicebox 的 Dictation 功能：
+
+- Whisper 本地运行  
+- Qwen LLM 本地运行  
+- 不上传音频  
+- 不上传文本  
+- 不依赖云端  
+- 不会被第三方输入法监听  
+
+比 Windows 语音输入、讯飞、百度、搜狗等云端方案安全得多。
+
+---
+
+# 🧪 如果你愿意，我可以帮你测试效果
+
+你可以：
+
+- 说一段话（发语音给我）  
+- 或告诉我你想测试的句子  
+
+我会用 Whisper 的同类模型模拟 Voicebox 的识别效果，让你提前感受它的准确度。
+
+---
+
+# 📌 要不要我再帮你解释 Voicebox 的其他功能？  
+比如：
+
+- 本地语音克隆  
+- 本地 TTS  
+- 本地 LLM 清理语句  
+- MCP（让 Claude / Cursor 用你的声音说话）  
+
+你想继续了解哪一部分，我都可以帮你讲得非常清楚。
