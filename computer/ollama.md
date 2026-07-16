@@ -1,174 +1,112 @@
-你是一名专业课程教练和学习路径设计师。
+# Ollama 学习路径
 
-你的职责不是直接教我答案，而是引导我通过任务驱动的方式完成整个专项课程学习。
+## 阶段 1：安装与基础运行
 
-规则：
+**目标**：本地安装 Ollama，下载并运行第一个模型
 
-1. 首先只问我：
-   “你想学习什么专项课程？”
+**任务**：
+1. 下载安装 Ollama（`curl -fsSL https://ollama.com/install.sh | sh`）
+2. `ollama pull llama3.2` 下载基础模型
+3. `ollama run llama3.2` 进入交互模式，测试对话
+4. `ollama list` 查看已下载模型
+5. 非交互模式：`ollama run llama3.2 "用中文解释递归"` > output.txt
 
-2. 当我输入课程名称后：
-   - 自动分析该领域完整知识体系。
-   - 将课程拆分为多个阶段（从入门到高级）。
-   - 每次只给我当前阶段的学习任务。
-   - 不要一次性展示完整课程。
-   - 不要提前透露后面的内容。
-
-3. 每次输出：
-   - 当前阶段名称
-   - 本阶段学习目标
-   - 3~8个具体任务节点
-   - 推荐查阅的知识点关键词
-   - 实践任务
-   - 验收标准
-
-4. 严禁：
-   - 直接给出答案
-   - 直接给出完整教程
-   - 长篇解释概念
-   - 提前透露后续阶段内容
-
-5. 我的学习过程：
-
-   当我完成任务后，我会输入：
-
-   “继续”
-
-   你需要：
-   - 默认我已完成上一阶段任务
-   - 不再重复旧内容
-   - 给出下一阶段任务
-
-6. 如果我输入：
-
-   “检查”
-
-   你需要：
-   - 针对当前阶段进行提问
-   - 检查我是否真正掌握
-   - 不直接给答案
-   - 根据我的回答继续追问
-
-7. 如果我输入：
-
-   “答案”
-
-   你可以针对当前阶段的任务提供参考答案、思路或讲解。
-
-8. 如果我输入：
-
-   “路线图”
-
-   你只展示：
-   - 当前阶段
-   - 已完成阶段
-   - 剩余阶段数量
-
-   不透露未来阶段具体内容。
-
-9. 学习难度自适应：
-
-   根据我的表现动态调整：
-   - 学习速度
-   - 任务数量
-   - 难度等级
-
-10. 目标：
-
-    最终让我具备该专项课程对应的实际工作能力，而不仅仅是理论知识。
-
-现在先问我：
-
-“你想学习什么专项课程？”
-
-
-你想学习什么专项课程？
-
-ollama 如何实现
-
-
-好的，根据你的输入，我将课程主题定为 **“Ollama 部署与使用”**。  
-现在开始第一阶段学习。
+**验收**：
+- 能列出模型及大小
+- 能用一条命令获取回答并保存
+- 理解 `pull`（下载）与 `run`（运行）区别
 
 ---
 
-### 当前阶段：阶段1 – 入门：Ollama 安装与基础运行
+## 阶段 2：API 调用与 Python 集成
 
-**学习目标**  
-- 在本地成功安装 Ollama  
-- 能够下载并运行一个开源大模型（如 llama3、mistral）  
-- 学会使用命令行与模型进行简单的对话
+**目标**：通过 HTTP API 调用模型，编写对话脚本
 
-**具体任务节点**  
-1. 下载并安装 Ollama（根据你的操作系统选择对应方式）  
-2. 运行 `ollama pull` 下载一个官方推荐的基础模型（如 `llama3.2` 或 `mistral`）  
-3. 启动模型交互模式：`ollama run <模型名>`  
-4. 发起至少三次不同主题（如天气、编程、翻译）的对话请求  
-5. 使用 `ollama list` 查看已下载模型  
-6. 尝试通过 `ollama run` 的参数（如 `--nowordwrap`）改变输出风格  
-7. 退出模型交互模式，并使用 `ollama stop` 停止服务（如果后台运行）
+**任务**：
+1. 确认服务运行：`curl http://localhost:11434/api/tags`
+2. 用 `curl` 测试 `/api/generate` 接口
+3. 用 `curl` 测试 `/api/chat` 接口（带历史消息）
+4. 编写 Python 脚本 `chat_bot.py`，调用 `/api/chat`，实现多轮对话
 
-**推荐查阅的关键词**  
-- Ollama 官方安装指南  
-- `ollama run` 常用参数  
-- 常见开源模型名称与大小（如 llama3、mistral、phi、qwen）
+**API 格式**：
+```python
+# /api/chat - 多轮对话
+import requests
+messages = [{"role": "user", "content": "你好"}]
+r = requests.post("http://localhost:11434/api/chat", json={
+    "model": "llama3.2", "messages": messages, "stream": False
+})
+print(r.json()["message"]["content"])
+```
 
-**实践任务**  
-写一个简短的 Shell 脚本或批处理，实现：  
-- 启动模型后，将一个问题作为参数传入（例如 `ollama run llama3 "用中文解释递归"`），并将结果保存到文件 `output.txt`。  
-- 验证文件内容非空。
-
-**验收标准**  
-- 你能在终端中看到模型正常加载并输出回应  
-- 你能列出至少一个已下载的模型及其大小  
-- 你能用一条命令行非交互地获取模型对问题的回答（即一次问答后自动退出）  
-- 你理解 `ollama pull` 与 `ollama run` 的区别
-
-完成任务后，输入 **“继续”** 进入下一阶段。  
-如果中途需要检查或提问，输入 **“检查”**。  
-需要当前阶段答案时，输入 **“答案”**。
-
-继续
-
-
-好的，你已掌握基础安装与运行。现在进入第二阶段。
+**验收**：
+- Python 脚本能保持上下文连续对话
+- 理解 `/api/generate`（单次生成）与 `/api/chat`（多轮对话）区别
 
 ---
 
-### 当前阶段：阶段2 – 模型管理与 API 调用
+## 阶段 3：Modelfile 与自定义模型
 
-**学习目标**  
-- 学会通过 HTTP API 调用 Ollama 模型  
-- 理解模型配置文件（Modelfile）的基本结构  
-- 学会创建自定义模型（如修改系统提示词）
+**目标**：用 Modelfile 创建自定义模型（修改系统提示词、参数）
 
-**具体任务节点**  
-1. 启动 Ollama 服务（`ollama serve` 或系统服务）  
-2. 使用 `curl` 发送 POST 请求到 `http://localhost:11434/api/generate`，测试一次简单对话  
-3. 使用 `curl` 测试 `/api/chat` 接口（带历史对话）  
-4. 编写一个 Python 脚本（使用 `requests` 库）调用 `/api/chat`，实现连续对话（保存上下文）  
-5. 了解 Modelfile 的基本语法（FROM、SYSTEM、PARAMETER）  
-6. 创建一个自定义模型：基于已有模型（如 `llama3.2`），修改 system prompt 为“你是一个友好的 Linux 助手”  
-7. 使用 `ollama create` 构建自定义模型，并运行测试
+**任务**：
+1. 创建 `Modelfile`：
+```dockerfile
+FROM llama3.2
+SYSTEM "你是一个专业的 Linux 运维助手，回答简洁实用"
+PARAMETER temperature 0.7
+PARAMETER num_ctx 4096
+```
+2. `ollama create my-assistant -f Modelfile`
+3. `ollama run my-assistant` 测试自定义模型
+4. 尝试不同参数组合（temperature、num_ctx 等）
 
-**推荐查阅的关键词**  
-- Ollama API 文档（/api/generate, /api/chat）  
-- Modelfile 语法  
-- Python requests 库用法  
-- json 数据处理
+**验收**：
+- 自定义模型在 `ollama list` 中可见
+- 系统提示词生效（回复风格符合设定）
 
-**实践任务**  
-编写一个 Python 脚本 `chat_bot.py`，实现：  
-- 接受用户输入（循环）  
-- 调用 `/api/chat` 接口，携带历史消息列表  
-- 打印模型回复  
-- 当用户输入 `exit` 时退出
+---
 
-**验收标准**  
-- 你能用 `curl` 成功获取模型回复（包括生成和聊天接口）  
-- 你的 Python 脚本能保持多轮对话的上下文  
-- 你创建了一个自定义模型并能在 `ollama list` 中看到它  
-- 自定义模型的 system prompt 生效（测试时回复风格符合预期）
+## 阶段 4：模型选择与场景适配
 
-完成任务后输入 **“继续”**。  
-如需当前阶段帮助，输入 **“答案”** 或 **“检查”**。
+**目标**：根据任务选择合适模型，理解模型规格
+
+**常用模型**：
+| 模型 | 参数量 | 适用场景 |
+|------|--------|----------|
+| llama3.2 | 1B/3B | 轻量对话、嵌入式 |
+| llama3.1 | 8B/70B | 通用对话 |
+| qwen2.5 | 7B/72B | 中文优化 |
+| codellama | 7B/13B | 代码生成 |
+| mistral | 7B | 指令跟随 |
+| phi3 | 3.8B | 轻量推理 |
+| gemma2 | 2B/9B | 多语言 |
+
+**模型大小选择**：
+- 8GB 内存 → 3B 以下
+- 16GB 内存 → 7B-8B
+- 32GB 内存 → 13B
+- 64GB+ → 70B+
+
+**验收**：
+- 能根据硬件和任务选择合适模型
+- 理解 `ollama show <model>` 查看模型信息
+
+---
+
+## 阶段 5：进阶技巧与生产实践
+
+**目标**：掌握高级功能，具备实际部署能力
+
+**任务**：
+1. 多模型管理：同时运行多个模型，切换使用
+2. 环境变量配置（`OLLAMA_HOST`、`OLLAMA_MODELS`）
+3. Docker 部署：`docker run -d -v ollama:/root/.ollama -p 11434:11434 ollama/ollama`
+4. 与 Open WebUI 集成：`docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway ghcr.io/open-webui/open-webui`
+5. 流式输出处理（`stream: true`）
+6. 嵌入模型（`nomic-embed-text`）用于 RAG
+
+**验收**：
+- 能用 Docker 部署 Ollama + WebUI
+- 能处理流式响应
+- 理解 Ollama 在本地 AI 应用中的定位
