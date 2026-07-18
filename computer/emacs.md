@@ -111,3 +111,19 @@ M-x markdown-toggle-url-hiding
 ```
 
 密码放 `~/.authinfo.gpg`，启用后 `SPC a c i e` 启动。
+
+### browse-url 使用 eww
+
+全局使用 Emacs 内置浏览器：
+
+```elisp
+(setq browse-url-browser-function 'eww-browse-url)
+```
+
+仅 elfeed 文章用 eww（其他场景仍用外部浏览器）：
+
+```elisp
+(add-hook 'elfeed-show-mode-map
+          (kbd "b") (lambda () (interactive)
+                      (eww-browse-url (elfeed-entry-link elfeed-show-entry))))
+```
