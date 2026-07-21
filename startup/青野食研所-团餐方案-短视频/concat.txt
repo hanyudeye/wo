@@ -1,6 +1,0 @@
-file '/home/wuming/me/wo/startup/青野食研所-团餐方案-短视频/seg_00.mp4'
-file '/home/wuming/me/wo/startup/青野食研所-团餐方案-短视频/seg_01.mp4'
-file '/home/wuming/me/wo/startup/青野食研所-团餐方案-短视频/seg_02.mp4'
-file '/home/wuming/me/wo/startup/青野食研所-团餐方案-短视频/seg_03.mp4'
-file '/home/wuming/me/wo/startup/青野食研所-团餐方案-短视频/seg_04.mp4'
-file '/home/wuming/me/wo/startup/青野食研所-团餐方案-短视频/seg_05.mp4'
