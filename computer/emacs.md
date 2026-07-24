@@ -88,6 +88,84 @@ M-x markdown-toggle-url-hiding
 - 时间戳：`C-c C-s` 开始，`C-c C-d` 截止
 - 导出：`C-c C-e`
 
+### Org Agenda（Spacemacs）
+
+#### 配置
+
+在 `dotspacemacs/user-config` 中：
+
+```elisp
+(setq org-agenda-files '("~/org/" "~/org/todo.org"))
+
+(setq org-agenda-custom-commands
+      '(("w" "Weekly Review"
+         agenda ""
+         ((org-agenda-span 'week)))))
+```
+
+#### 快捷键
+
+| 按键 | 作用 |
+|------|------|
+| `SPC a o o` | 打开 Org Agenda 主视图 |
+| `SPC a o a` | 当天 Agenda |
+
+Agenda 视图内：
+
+| 按键 | 作用 |
+|------|------|
+| `d` | 日视图 |
+| `w` | 周视图 |
+| `t` | 只显示 TODO |
+| `T` | 按标签过滤 |
+| `f` / `b` | 前/后一天 |
+| `g r` | 刷新 |
+| `q` | 退出 |
+| `RET` | 跳转到源条目 |
+| `B` | 按日期排序 |
+
+#### Org 文件中标记时间
+
+```org
+* TODO 学习 Python
+  SCHEDULED: <2026-07-25 周六 05:00>
+
+* TODO AI项目
+  DEADLINE: <2026-07-26 周日>
+```
+
+#### 时间统计（Clock）
+
+Agenda 视图内：
+
+| 按键 | 作用 |
+|------|------|
+| `tr` | Clock Report — 显示时钟汇总表 |
+| `tl` | Log Mode — 显示已完成条目和时钟历史 |
+
+在 org 文件中操作时钟：
+
+| 按键 | 作用 |
+|------|------|
+| `SPC m C i` | 开始计时（clock-in） |
+| `SPC m C o` | 停止计时（clock-out） |
+| `SPC m C d` | 临时显示当前文件的时钟时间 |
+| `SPC m C R` | 插入时钟报告表格 |
+
+在 org 文件中手动记录：
+
+```org
+* TODO 学习 Python
+  CLOCK: [2026-07-24 周四 05:00] → [2026-07-24 周四 06:00] => 1:00
+```
+
+插入 clocktable 汇总：
+
+```org
+#+BEGIN: clocktable :scope file :block today
+#+END:
+```
+
 ### Magit（Git）
 
 | 操作 | 快捷键 |

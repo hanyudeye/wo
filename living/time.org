@@ -1,0 +1,15 @@
+* 今天
+** TODO 学习 ChatTTS
+SCHEDULED: <2026-07-24 15:00>
+:LOGBOOK:
+CLOCK: [2026-07-24 五 15:13]--[2026-07-24 五 16:50] =>  1:37
+CLOCK: [2026-07-24 五 15:12]
+:END:
+** TODO Python
+SCHEDULED: <2026-07-24 20:00>
+#+BEGIN: clocktable :scope subtree :maxlevel 2
+#+CAPTION: Clock summary at [2026-07-24 五 16:50]
+| Headline     | Time   |
+|--------------+--------|
+| *Total time* | *0:00* |
+#+END:
