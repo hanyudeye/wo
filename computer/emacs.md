@@ -126,6 +126,8 @@ Agenda 视图内：
 
 #### Org 文件中标记时间
 
+手动写：标题下一行直接写 `SCHEDULED:` 或 `DEADLINE:`，中间不能有空行：
+
 ```org
 * TODO 学习 Python
   SCHEDULED: <2026-07-25 周六 05:00>
@@ -133,6 +135,15 @@ Agenda 视图内：
 * TODO AI项目
   DEADLINE: <2026-07-26 周日>
 ```
+
+快捷键：
+
+| 按键 | 作用 |
+|------|------|
+| `C-c C-s` | 设置 SCHEDULED 时间 |
+| `C-c C-d` | 设置 DEADLINE 时间 |
+
+输入后弹出日历选日期，再输入具体时间。
 
 #### 时间统计（Clock）
 

@@ -1,15 +1,21 @@
-* 今天
-** TODO 学习 ChatTTS
-SCHEDULED: <2026-07-24 15:00>
+* 7月
+** DONE 学习 ChatTTS
+CLOSED: [2026-07-25 六 14:45] DEADLINE: <2026-07-24 五> SCHEDULED: <2026-07-24 15:00>
 :LOGBOOK:
 CLOCK: [2026-07-24 五 15:13]--[2026-07-24 五 16:50] =>  1:37
 CLOCK: [2026-07-24 五 15:12]
 :END:
-** TODO Python
-SCHEDULED: <2026-07-24 20:00>
+** DONE Python
+CLOSED: [2026-07-25 六 14:46] SCHEDULED: <2026-07-24 20:00>
 #+BEGIN: clocktable :scope subtree :maxlevel 2
 #+CAPTION: Clock summary at [2026-07-24 五 16:50]
 | Headline     | Time   |
 |--------------+--------|
 | *Total time* | *0:00* |
 #+END:
+
+** 2026-07-25
+*** DONE 整理周工作
+CLOSED: [2026-07-25 六 14:43] DEADLINE: <2026-07-25 六 15:00> SCHEDULED: <2026-07-25 六 14:00>
+
+*** TODO 
