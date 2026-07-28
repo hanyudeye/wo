@@ -1,213 +1,53 @@
-# 技能
-https://github.com/obra/superpowers.git
-
-# 如何使用 openhands 自动写博客
-
-OpenHands 自动写博客最有效的方式不是直接说：
-
-```text
-帮我写一篇博客
-```
-
-而是把它当成一个内容团队：
-
-```text
-研究员 → 大纲设计 → 写作 → SEO优化 → 发布
-```
-
-OpenHands 能读写文件、执行脚本、搜索资料、调用浏览器，因此很适合做这个流程。([OpenHands Docs][1])
-
----
-
-## 方案1：单篇博客自动生成
-
-建立目录：
-
-```bash
-blog/
-├── topics.txt
-├── output/
-```
-
-topics.txt
-
-```text
-Python异步编程
-Qwen3-Coder评测
-OpenHands使用教程
-```
-
-然后给 OpenHands 任务：
-
-```text
-读取 topics.txt
-
-对每个主题执行：
-
-1. 搜集最新资料
-2. 提取核心观点
-3. 生成博客大纲
-4. 编写2000字以上Markdown文章
-5. 添加SEO标题
-6. 添加FAQ
-7. 保存到output目录
-
-文件名格式：
-
-YYYY-MM-DD-topic.md
-```
-
-OpenHands 可以直接创建 Markdown 文件并保存。([OpenHands Docs][1])
-
----
-
-## 方案2：自定义博客写手 Agent（推荐）
-
-OpenHands 支持通过 Markdown 文件创建专用 Agent。([OpenHands Docs][2])
-
-创建：
-
-```bash
-mkdir -p .agents/agents
-```
-
-文件：
-
-```bash
-.agents/agents/blog-writer.md
-```
-
-内容：
-
-```markdown
----
-name: blog-writer
-description: SEO blog writer
-tools:
-  - terminal
-  - file_editor
----
-
-# Blog Writer
-
-你是一名专业技术博客作者。
-
-规则：
-
-1. 先生成大纲
-2. 再写正文
-3. 使用Markdown
-4. 每个章节包含示例
-5. 添加FAQ
-6. 添加总结
-7. 自动保存文件
-
-输出长度：
-
-2000-3000字
-```
-
-OpenHands 会把它作为专用子 Agent 调用。([OpenHands Docs][2])
-
----
-
-## 方案3：自动批量生成博客
-
-创建：
-
-```bash
-topics.csv
-```
-
-```csv
-title
-Python教程
-QQQ投资策略
-AI Agent入门
-Ubuntu优化
-```
-
-让 OpenHands：
-
-```text
-读取 topics.csv
-
-循环执行：
-
-- 生成大纲
-- 写博客
-- 保存 markdown
-
-要求：
-
-每天生成1篇
-```
-
-然后用 Linux 定时任务：
-
-```bash
-crontab -e
-```
-
-```bash
-0 20 * * * python generate_blog.py
-```
-
-每天晚上自动产出文章。
-
----
-
-## 方案4：研究型博客（质量最高）
-
-这是目前最值得做的。
-
-任务：
-
-```text
-主题：
-
-OpenHands vs Claude Code
-
-要求：
-
-1. 搜索Github
-2. 搜索官方文档
-3. 收集优缺点
-4. 对比功能
-5. 输出3000字博客
-
-结构：
-
-- 介绍
-- OpenHands
-- Claude Code
-- 对比表
-- 适用场景
-- 总结
-```
-
-这种方式比直接让模型写质量高很多，因为先做资料搜集再写作。OpenHands 支持浏览网页、搜索信息和编辑文件。([arXiv][3])
-
----
-
-结合你的情况（Python + Ubuntu + 想做自动化内容）：
-
-推荐架构：
-
-```text
-OpenHands
-    ↓
-Qwen3-Coder 或 GPT-5
-    ↓
-Markdown博客
-    ↓
-MkDocs/Hugo
-    ↓
-自动发布到Github Pages
-```
-
-这样你只需要维护一个 `topics.txt`，每天自动生成和发布技术博客。对于你之前提到的英语、AI工具、Python教程、投资笔记等主题，这套流程都适用。
-
-[1]: https://docs.openhands.dev/sdk/getting-started?utm_source=chatgpt.com "Getting Started - OpenHands Docs"
-[2]: https://docs.openhands.dev/sdk/guides/agent-file-based?utm_source=chatgpt.com "File-Based Agents - OpenHands Docs"
-[3]: https://arxiv.org/abs/2506.03011?utm_source=chatgpt.com "Coding Agents with Multimodal Browsing are Generalist Problem Solvers"
+# OpenHands 项目简介
+
+## 概述
+OpenHands 是一个开源的 AI 驱动软件开发平台，MIT 许可。
+
+## 核心产品
+
+### SDK
+可组合的 Python 库，包含所有 agentic 技术，可本地运行或云端扩展至 1000+ agent。
+- 文档：https://docs.openhands.dev/sdk
+- 源码：https://github.com/OpenHands/software-agent-sdk/
+
+### CLI
+命令行界面，支持 Claude/GPT 等 LLM，类似 Claude Code 体验。
+- 文档：https://docs.openhands.dev/openhands/usage/run-openhands/cli-mode
+- 源码：https://github.com/OpenHands/OpenHands-CLI
+
+### Local GUI
+REST API + React 单页应用，可本地运行 agent，类似 Devin/Jules 体验。
+- 文档：https://docs.openhands.dev/openhands/usage/run-openhands/local-setup
+
+### Cloud
+托管部署版本，支持：
+- Slack、Jira、Linear 集成
+- 多用户支持
+- RBAC 和权限管理
+- 协作功能（对话共享）
+- 免费试用：https://app.all-hands.dev
+
+### Enterprise
+企业版，支持 Kubernetes 自托管（Polyform 许可）。
+- 网站：https://openhands.dev/enterprise
+
+## 技术栈
+| 组件 | 技术 |
+|------|------|
+| 后端 | Python（`openhands/` 目录） |
+| 前端 | React（`frontend/` 目录） |
+| 运行时 | Docker 容器化 |
+| 测试基准 | SWE-Bench 得分 77.6% |
+
+## 生态项目
+- [评估框架](https://github.com/OpenHands/benchmarks)
+- [Chrome 扩展](https://github.com/OpenHands/openhands-chrome-extension/)
+- [Theory-of-Mind 模块](https://github.com/OpenHands/ToM-SWE)
+
+## 许可
+核心 `openhands` 和 `agent-server` Docker 镜像为 MIT 许可，`enterprise/` 目录除外（Polyform 许可）。
+
+## 社区
+- Slack：https://dub.sh/openhands
+- GitHub Issues：https://github.com/OpenHands/OpenHands/issues
+- 产品路线图：https://github.com/orgs/openhands/projects/1
