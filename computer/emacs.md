@@ -234,3 +234,24 @@ Agenda 视图内：
           (kbd "b") (lambda () (interactive)
                       (eww-browse-url (elfeed-entry-link elfeed-show-entry))))
 ```
+
+## 终端模拟
+
+### 选择
+
+| 方案 | 说明 |
+|------|------|
+| `M-x shell` | 仅行程序，**不能**跑 opencode、vim 等全屏 TUI 程序 |
+| `M-x vterm` | **最佳** — 基于 libvterm，真正终端模拟，能跑所有 TUI 程序 |
+| `M-x ansi-term` | 内置，比 shell 好，但部分程序仍有兼容问题 |
+| `M-x eat` | 纯 elisp 终端，介于 ansi-term 和 vterm 之间 |
+
+### vterm 复制与导航
+
+`vterm` 中默认按键直接传给子进程，无法用 Emacs 键绑定。
+
+**流程：** `C-c C-t` 进入 `vterm-copy-mode` → 用 Emacs 键（`C-s` 搜索、`C-n/p` 上下移动、`M-w` 复制）→ `C-c C-t` 或 `q` 退出。
+
+### ansi-term 复制与导航
+
+`C-c C-j` 切换到 `term-line-mode`（Emacs 键绑定生效）→ 选文字复制 → `C-c C-k` 切回 `term-char-mode`。
