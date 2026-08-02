@@ -1,5 +1,27 @@
 # macOS
 
+## 关闭开机自启软件
+
+### 图形界面（macOS Sonoma 及之后）
+
+1. 打开「系统设置」→「通用」→「登录项与扩展」
+2. 「登录时打开」标签页：选中要移除的 App，点 `-` 或右键移除
+3. 「允许在后台」标签页：关闭后台常驻 App（如微信、迅雷）的开关
+
+macOS Ventura 及更早：系统偏好设置 → 用户与群组 → 登录项，选中后点 `-` 移除。
+
+### 命令行
+
+```bash
+# 查看用户级 LaunchAgent
+ls ~/Library/LaunchAgents
+# 查看系统级 LaunchAgent / LaunchDaemon
+ls /Library/LaunchAgents /Library/LaunchDaemons
+# 移除自启（以某个 plist 为例）
+launchctl unload ~/Library/LaunchAgents/com.example.foo.plist
+rm ~/Library/LaunchAgents/com.example.foo.plist
+```
+
 ## tmux 配置与使用
 
 ### 安装
