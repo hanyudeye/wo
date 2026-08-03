@@ -129,3 +129,22 @@ fi
 - **[devmux](https://github.com/arach/devmux)** — 声明式 tmux 会话配置，有 macOS 菜单栏 App
 - **[tmuxinator](https://github.com/tmuxinator/tmuxinator)** — 用 YAML 文件定义项目 tmux 布局
 
+## macbook 如何把某个窗口投屏到平板进行浏览
+
+分两种情况：
+
+### 1. 平板是 iPad（推荐用 Sidecar）
+macOS 10.15+ 自带“随航”，把 iPad 变成 Mac 的第二块显示屏，可以把某个窗口直接拖过去浏览：
+
+- Mac 和 iPad 登录同一个 Apple ID，打开 Wi‑Fi/蓝牙（也可用数据线连接）。
+- 在 Mac：菜单栏点 **AirPlay 图标** → 选你的 iPad；或去 **系统设置 → 显示器 → 添加显示器**。
+- iPad 显示桌面后，把要浏览的窗口从 Mac 屏幕拖到 iPad 上即可。
+
+### 2. 平板是 Android 或任意设备
+用 **Deskreen**（免费开源）：
+- Mac 安装 Deskreen，平板浏览器打开电脑上显示的网址/二维码。
+- 在 Deskreen 里选择 **Share a Window**（只共享某个窗口），然后选你想投射的 Mac 窗口。
+- 平板浏览器里就能看到该窗口内容，适合单独浏览。
+
+其它工具：**Spacedesk**（把平板变扩展屏）、**Duet Display**（有线/无线扩展屏），操作类似。
+
