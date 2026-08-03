@@ -1,32 +1,50 @@
 * 日常
 ** TODO 05:00 - 06:00 起床，刷牙，洗澡，洗衣服
-SCHEDULED: <2026-08-04 二 05:00 +1d>
+SCHEDULED: <2026-08-05 三 05:00 +1d>
 :PROPERTIES:
-:LAST_REPEAT: [2026-08-03 一 14:30]
+:LAST_REPEAT: [2026-08-04 二 06:42]
 :END:
 
+- State "DONE"       from "TODO"       [2026-08-04 二 06:42]
 - State "DONE"       from "TODO"       [2026-08-03 一 14:30]
 ** TODO 06:00 - 07:00 学习/准备上班/深呼吸
-SCHEDULED: <2026-08-04 二 06:00 +1d>
+SCHEDULED: <2026-08-05 三 07:00 +1d>
 :PROPERTIES:
-:LAST_REPEAT: [2026-08-03 一 14:34]
+:LAST_REPEAT: [2026-08-04 二 07:24]
 :END:
 
 
+- State "DONE"       from "TODO"       [2026-08-04 二 07:24]
 - State "DONE"       from "TODO"       [2026-08-03 一 14:34]
 ** TODO 18:30 - 20:00 晚饭,散步，骑行
-SCHEDULED: <2026-08-03 一 19:50 +1d>
+SCHEDULED: <2026-08-04 二 19:50 +1d>
+:PROPERTIES:
+:LAST_REPEAT: [2026-08-04 二 06:43]
+:END:
 
+- State "DONE"       from "TODO"       [2026-08-04 二 06:43]
 ** TODO 20:00 - 22:00 洗澡，回忆与反思，准备睡觉
-SCHEDULED: <2026-08-03 一 21:00 +1d>
+SCHEDULED: <2026-08-04 二 21:00 +1d>
+:PROPERTIES:
+:LAST_REPEAT: [2026-08-04 二 06:43]
+:END:
 
+- State "DONE"       from "TODO"       [2026-08-04 二 06:43]
 ** TODO 22:30 睡觉
-SCHEDULED: <2026-08-03 一 22:30 +1d>
+SCHEDULED: <2026-08-04 二 22:30 +1d>
+:PROPERTIES:
+:LAST_REPEAT: [2026-08-04 二 06:43]
+:END:
 
-** TODO 短视频3小时
-SCHEDULED: <2026-08-03 一>
+- State "DONE"       from "TODO"       [2026-08-04 二 06:43]
+** DONE 短视频3小时
+CLOSED: [2026-08-04 二 06:43] SCHEDULED: <2026-08-03 一>
 
 * 8月
-** TODO 10:00 - 17:00 机器学习
-SCHEDULED: <2026-08-03 一 14:00 +1d>
+** TODO 10:00 - 17:00 机器学习,深呼吸
+SCHEDULED: <2026-08-04 二 14:00 +1d>
+:PROPERTIES:
+:LAST_REPEAT: [2026-08-04 二 06:44]
+:END:
 
+- State "DONE"       from "TODO"       [2026-08-04 二 06:44]
