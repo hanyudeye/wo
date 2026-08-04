@@ -116,4 +116,4 @@ LEFT JOIN table_b b ON a.id = b.a_id
 ---  美团拼接表格，业务员 ，t1 为业务表
 SELECT a.商品ID ,a.服务门店名称,b.业务员 from t1 a left join 业务员 b on a.服务门店ID=b.服务门店ID;
 
-导入表如果中文乱码，就选 GBK 编码
+导入csv表如果中文乱码，就选 GBK 编码，然后把表名命名为 t1

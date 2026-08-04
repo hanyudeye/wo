@@ -1,26 +1,27 @@
---
+# 数据
+# 代码/算法 操作数据
+# 手册
+## 3. 数据类型
 
-# 3. 数据类型
-
-## 字符串（str）
+### 字符串（str）
 
 ```python
 name = "Alice"
 ```
 
-## 整数（int）
+### 整数（int）
 
 ```python
 age = 25
 ```
 
-## 浮点数（float）
+### 浮点数（float）
 
 ```python
 price = 9.99
 ```
 
-## 布尔值（bool）
+### 布尔值（bool）
 
 ```python
 is_student = True
@@ -41,15 +42,15 @@ print(type(age))
 
 ---
 
-# 4. 输入和输出
+## 4. 输入和输出
 
-## 输出
+### 输出
 
 ```python
 print("Hello")
 ```
 
-## 输入
+### 输入
 
 ```python
 name = input("请输入姓名：")
@@ -68,9 +69,9 @@ age = int(input("请输入年龄："))
 
 ---
 
-# 5. 运算符
+## 5. 运算符
 
-## 算术运算
+### 算术运算
 
 ```python
 a = 10
@@ -93,7 +94,7 @@ print(a / b)
 
 ---
 
-## 取余
+### 取余
 
 ```python
 print(10 % 3)
@@ -114,7 +115,7 @@ if num % 2 == 0:
 
 ---
 
-## 幂运算
+### 幂运算
 
 ```python
 print(2 ** 3)
@@ -128,9 +129,9 @@ print(2 ** 3)
 
 ---
 
-# 6. 条件判断
+## 6. 条件判断
 
-## if
+### if
 
 ```python
 age = 18
@@ -141,7 +142,7 @@ if age >= 18:
 
 ---
 
-## if else
+### if else
 
 ```python
 age = 15
@@ -154,7 +155,7 @@ else:
 
 ---
 
-## if elif else
+### if elif else
 
 ```python
 score = 85
@@ -171,9 +172,9 @@ else:
 
 ---
 
-# 7. 循环
+## 7. 循环
 
-## while
+### while
 
 ```python
 i = 1
@@ -195,7 +196,7 @@ while i <= 5:
 
 ---
 
-## for
+### for
 
 ```python
 for i in range(5):
@@ -233,7 +234,7 @@ for i in range(1, 6):
 
 ---
 
-# 8. 列表（List）
+## 8. 列表（List）
 
 列表相当于数组。
 
@@ -284,7 +285,7 @@ for fruit in fruits:
 
 ---
 
-# 9. 元组（Tuple）
+## 9. 元组（Tuple）
 
 元组创建后不能修改。
 
@@ -308,7 +309,7 @@ rgb = (255, 255, 255)
 
 ---
 
-# 10. 字典（Dictionary）
+## 10. 字典（Dictionary）
 
 字典是键值对结构。
 
@@ -356,7 +357,7 @@ for key, value in user.items():
 
 ---
 
-# 11. 函数
+## 11. 函数
 
 函数用于封装代码。
 
@@ -397,7 +398,7 @@ print(result)
 
 ---
 
-# 12. 字符串常用操作
+## 12. 字符串常用操作
 
 长度：
 
@@ -451,9 +452,9 @@ Pyt
 
 ---
 
-# 13. 文件读写
+## 13. 文件读写
 
-## 写文件
+### 写文件
 
 ```python
 with open("test.txt", "w") as f:
@@ -462,7 +463,7 @@ with open("test.txt", "w") as f:
 
 ---
 
-## 读文件
+### 读文件
 
 ```python
 with open("test.txt", "r") as f:
@@ -473,7 +474,7 @@ print(content)
 
 ---
 
-# 14. 异常处理
+## 14. 异常处理
 
 避免程序崩溃。
 
@@ -496,7 +497,7 @@ except ValueError:
 
 ---
 
-# 15. 模块
+## 15. 模块
 
 Python 的代码库称为模块。
 
@@ -526,7 +527,7 @@ print(random.randint(1, 100))
 
 ---
 
-# 16. 面向对象（OOP）
+## 16. 面向对象（OOP）
 
 定义类：
 
@@ -556,7 +557,7 @@ dog.bark()
 
 ---
 
-# 17. 实战：猜数字游戏
+## 17. 实战：猜数字游戏
 
 ```python
 import random
@@ -580,7 +581,7 @@ while True:
 
 ---
 
-# 18. 实战：批量重命名文件
+## 18. 实战：批量重命名文件
 
 ```python
 import os
@@ -601,7 +602,7 @@ for file in files:
 
 ---
 
-# 19. 实战：网页抓取
+## 19. 实战：网页抓取
 
 安装：
 
@@ -623,7 +624,7 @@ print(response.text)
 
 ---
 
-# 20. 实战：自动化办公 Excel
+## 20. 实战：自动化办公 Excel
 
 安装：
 
@@ -645,11 +646,79 @@ print(sheet["A1"].value)
 
 ---
 
-# 下一步学习路线
+## 21. 虚拟环境
+
+每个项目用独立的虚拟环境，避免包版本冲突。
+
+### venv（Python 自带）
+
+创建：
+
+```bash
+python -m venv .venv
+```
+
+激活：
+
+```bash
+# Linux / macOS
+source .venv/bin/activate
+
+# Windows
+.venv\Scripts\activate
+```
+
+安装依赖：
+
+```bash
+pip install requests
+```
+
+导出依赖：
+
+```bash
+pip freeze > requirements.txt
+```
+
+从依赖文件安装：
+
+```bash
+pip install -r requirements.txt
+```
+
+退出：
+
+```bash
+deactivate
+```
+
+### conda
+
+```bash
+conda create -n myenv python=3.11
+conda activate myenv
+```
+
+### uv（更快的现代替代）
+
+```bash
+uv venv
+uv pip install requests
+```
+
+一键初始化项目：
+
+```bash
+uv init && uv add requests
+```
+
+---
+
+## 下一步学习路线
 
 如果你的目标是：
 
-### 自动化办公
+#### 自动化办公
 
 学习：
 
@@ -659,7 +728,7 @@ print(sheet["A1"].value)
 * pandas
 * pyautogui
 
-### AI开发
+#### AI开发
 
 学习：
 
@@ -669,7 +738,7 @@ print(sheet["A1"].value)
 * PyTorch
 * LLM API调用
 
-### Web开发
+#### Web开发
 
 学习：
 
@@ -680,7 +749,7 @@ print(sheet["A1"].value)
 * Flask
 * Django
 
-### 运维自动化
+#### 运维自动化
 
 学习：
 

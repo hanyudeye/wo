@@ -9,8 +9,8 @@ output_file = r'd:\Users\Administrator\Desktop\抖音统计月核销GMV\output.x
 
 # 读取两个 sheet
 
-sheet1 = pd.read_excel(input_file, sheet_name="Sheet1", dtype={"id": str})
-sheet2 = pd.read_excel(input_file, sheet_name="Sheet2", dtype={"id": str})
+sheet1 = pd.read_excel(input_file, sheet_name="Sheet1")
+sheet2 = pd.read_excel(input_file, sheet_name="Sheet2")
 
 # 按 id LEFT JOIN（sheet1 为主表）
 # how="left" 表示左连接
