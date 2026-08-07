@@ -3,11 +3,11 @@
 - 9月记得投资
 整本pdf电子书我看不进去，怎么用AI快速总结提炼
 
-如何把做wo的文档，制作成网站
 
 安装应用 app（PWA）与专注
 1. reddit
 2. google
 3.https://drive.google.com/ 
+我没有配置 ellama ,我配置了 gptel ，使用了 deepseek ， 你给我一份 ellama 配置呢
 
 
