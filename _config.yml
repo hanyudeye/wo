@@ -1,1 +1,17 @@
 theme: jekyll-theme-minimal
+title: 我的知识库
+description: 个人知识库 / second brain
+lang: zh-CN
+baseurl: /wo
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - AGENTS.md
+  - docs/
+  - _sidebar.md
+  - "*.org"

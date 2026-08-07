@@ -1,3 +1,5 @@
+---
+---
 Claude Fable 5 — System Prompt
 克劳德·费布尔 5 — 系统提示
 

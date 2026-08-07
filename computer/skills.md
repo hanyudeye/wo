@@ -1,3 +1,5 @@
+---
+---
 # last30days 技能简介
 
 > 版本: v3.18.3 | 安装路径: `~/.agents/skills/last30days-skill/`

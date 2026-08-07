@@ -1,3 +1,5 @@
+---
+---
 # Voicebox 使用教程
 
 **Voicebox** 是一款开源、本地运行的 AI 语音工作室（作者 Jamie Pine，也是 Spacedrive 的作者），可作为 ElevenLabs 的免费替代品。支持声音克隆、文本转语音、听写、多轨故事编辑等功能，所有数据本地处理，隐私安全。

@@ -1,3 +1,5 @@
+---
+---
 # ERROR 1698 (28000): Access denied for user 'root'@'localhost'
 
 **MySQL 8.0+ 后默认不让 root 用户用密码登录**，必须用**系统 root 权限**才能进。

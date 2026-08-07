@@ -1,3 +1,5 @@
+---
+---
 ## claude code
 claude code 的提示词如下：
 
