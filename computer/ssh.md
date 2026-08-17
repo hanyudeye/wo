@@ -106,17 +106,53 @@ rsync -avz ./dir user@host:/path/     # 增量同步
 
 ## 跳板机 / ProxyJump
 
+跳板机（Jump Server / Bastion Host）是安全接入服务器集群的唯一入口。
+
+### 什么是跳板机
+
+- 一个独立的小服务器，部署在安全区域边界
+- 不能直连内部服务器，只能先 SSH 连跳板机，再从它跳转到目标机器
+- 相当于「中转站 / 门卫」，所有对外连接都经过它
+
+### 为什么要用它
+
+- **安全管控**：目标机器不暴露公网，只放行跳板机 IP
+- **统一审计**：跳板机上记录操作日志，谁做了什么一查便知
+- **权限管理**：不用给每台服务器开账号，只管理跳板机账号
+- **统一策略**：SSH key、口令策略集中管一处
+
+### 使用示例
+
+两步跳转：
 ```bash
-ssh -J jump_host user@target_host
+# 先连跳板机
+ssh user@jump-server
+# 在跳板机上再连目标机器（跳板机与内网同网段）
+ssh user@10.0.0.5
+```
+
+一步到位（ProxyJump）：
+```bash
+ssh -J user@jump-server user@10.0.0.5
 ```
 
 Config 写法：
 ```
+Host jump
+    HostName jump.example.com
+    User admin
+
 Host target
     HostName 10.0.0.5
     User root
-    ProxyJump jump_host
+    ProxyJump jump
 ```
+
+之后直接 `ssh target` 即可。
+
+### 进阶：堡垒机
+
+企业里跳板机常升级为堡垒机（如 JumpServer、齐治），带 Web 界面、录屏审计、密钥托管，普通跳板机只是它的简化版。
 
 ## 免密登录（Agent Forwarding）
 

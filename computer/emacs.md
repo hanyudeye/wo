@@ -262,6 +262,18 @@ Agenda 视图内：
                       (eww-browse-url (elfeed-entry-link elfeed-show-entry))))
 ```
 
+#### eww 打不开 reddit 的解决
+
+- 新版 reddit 重度依赖 JS，eww 渲染不了，改用 `old.reddit.com`
+- reddit 会拦截 eww 默认 UA，伪造浏览器 UA：
+
+```elisp
+(setq eww-user-agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36")
+```
+
+- 想省流量用移动版：`old.reddit.com/r/xxx/.compact`
+- 仍打不开就转外部浏览器：`C-u M-x eww` 可手动选择浏览器
+
 ## 终端模拟
 
 ### 选择
