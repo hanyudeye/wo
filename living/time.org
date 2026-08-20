@@ -22,7 +22,7 @@ SCHEDULED: <2026-08-08 六 07:00 +1d>
 - State "DONE"       from "TODO"       [2026-08-07 五 13:04]
 - State "DONE"       from "TODO"       [2026-08-04 二 07:24]
 - State "DONE"       from "TODO"       [2026-08-03 一 14:34]
-** TODO 18:30 - 20:00 晚饭,散步，骑行
+** TODO 18:30 - 20:00 晚饭,散步，骑行，羽毛球
 SCHEDULED: <2026-08-07 五 19:50 +1d>
 :PROPERTIES:
 :LAST_REPEAT: [2026-08-07 五 13:05]
