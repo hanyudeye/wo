@@ -150,3 +150,7 @@ SCHEDULED: <2026-08-21 五 14:00 +1d>
 - State "DONE"       from "TODO"       [2026-08-07 五 13:05]
 - State "DONE"       from "TODO"       [2026-08-07 五 13:05]
 - State "DONE"       from "TODO"       [2026-08-04 二 06:44]
+
+** TODO [读书]深入理解计算机系统
+SCHEDULED: <2026-08-22 六 +1d>
+
