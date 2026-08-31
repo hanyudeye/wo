@@ -1,20 +1,115 @@
 
-* 高价值任务
+* 短期任务，空了可以马上做
+** 处理键盘高度的问题，脚托可以去外面工地捡石头
+[[./todo/1.md][键盘高度]]
+
+** YouTube 账号订阅英文内容，学英语
+**科技**
+
+- `latest technology news`
+- `AI news`
+- `artificial intelligence`
+- `future technology`
+- `semiconductor news`
+- `programming`
+- `developer news`
+
+**新闻**
+
+- `BBC News live`
+- `Bloomberg Technology live`
+- `ABC News live`
+- `DW News live`
+- `world news live`
+
+**人生/成长**
+
+- `self improvement`
+- `psychology`
+- `productivity`
+- `career development`
+- `decision making`
+- `personal finance`
+
+然后**只看英语视频**。
+
+---
+
+### 我建议你直接订阅这一批
+
+#### 科技 / AI
+
+- MKBHD
+- Fireship
+- Marques Brownlee
+- The Verge
+- TechLinked
+- AI Explained
+- Matt Wolfe
+- ColdFusion
+- Lex Fridman
+
+#### 科学
+
+- Veritasium
+- 3Blue1Brown
+- Kurzgesagt
+- SmarterEveryDay
+- Vsauce
+
+#### 新闻
+
+- BBC News
+- Bloomberg Technology
+- DW News
+- ABC News
+- NBC News
+
+#### 人生成长
+
+- TED
+- Ali Abdaal
+- Cal Newport
+- Huberman Lab
+- The School of Life
+
+
+
+* 长期坚持 高价值任务
 
 ** 晚上7点去小区打羽毛球，力量训练，锻炼上肢
 ** 学习时 尽量弄个计时器 进行番茄时钟计时
+** 主动练习自己的英语能力
+[[./todo/雅思报名.md][学习英语]]
 
+** 空了学一门另类技能，钻研
+** 项目开发实践 <书籍>
+** 快乐
 
-动机来来去去，关键在于持续性
+最简洁总结：
 
+> **快乐 = 接受当下 + 做有意义的事 + 保持健康关系 + 少比较。**
 
-* 主动练习自己的英语能力
-SCHEDULED: <2026-08-21 五>
+再压缩：
 
-* 项目开发实践 <书籍>
+> **知足于拥有，专注于行动，连接于他人。**
 
+从心理学角度：
 
+- **身体舒服**：睡眠、运动、健康
+- **内心稳定**：减少无休止的欲望和比较
+- **有目标感**：每天做一点让自己成长的事
+- **有连接感**：和人、自然、社会产生联系
+- **有掌控感**：能影响自己的生活，而不是被环境完全推动
 
-* 空了学一门另类技能，钻研
+很多人的痛苦来自：
 
+> 过去无法改变，未来无法控制，却忽略了正在经历的现在。
 
+所以最核心的一句话：
+
+> **认真生活，减少比较，专注眼前值得做的事。**
+
+** 咸鱼卖虚拟货 (我有人要养，要勤奋些，显示器放窗户上面一些)
+
+价格 10  ，包含适当售后
