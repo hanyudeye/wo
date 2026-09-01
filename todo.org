@@ -113,3 +113,1007 @@
 ** 咸鱼卖虚拟货 (我有人要养，要勤奋些，显示器放窗户上面一些)
 
 价格 10  ，包含适当售后
+** 哪有有学习氛围好的雅思学习群
+
+有，而且如果你的目标是**真正学习，不是闲聊群**，我反而建议你优先找 **Discord 小组**，其次才是微信/QQ 群。
+
+我刚查了目前 2026 年还活跃的几个社区，比较推荐下面几个：
+
+### 1. IELTS Prep Discord —— 首选
+
+[IELTS Prep Discord 官方社区页面](https://discord.com/servers/ielts-prep-868524158743633981?utm_source=chatgpt.com)
+
+目前约 **3.6 万成员、900+ 人在线**，有：
+
+- Speaking 练习房
+- 找学习搭子
+- Writing 互批
+- Reading / Listening 讨论
+- 英语老师和母语者参与
+
+而且它明确定位就是 IELTS 学习，不是泛英语聊天群。([Discord][1])
+
+**缺点：**人太多，容易产生“热闹但不学习”的问题，所以你应该主动找 **Band 6–7、目标 7+、固定学习时间**的人组成 2～4 人小组。
+
+---
+
+### 2. IELTS International Discord —— 更适合“打卡型”
+
+[IELTS International 学习社区](https://www.ielts.international/discord?utm_source=chatgpt.com)
+
+这个我其实比较看好，因为它不是单纯聊天，而是设计了：
+
+- `daily-check-in` 每日打卡
+- `speaking-practice` 口语练习
+- `band-7-writing` 写作
+- 按目标分数分组
+
+它的定位就是 **study accountability（学习监督）**。([IELTS International][2])
+
+**如果你最大的问题是“知道应该学习，但容易拖延”，这个比普通微信群更适合。**
+
+---
+
+### 3. Reddit r/IELTS + Discord
+
+[IELTS Reddit 社区](https://www.reddit.com/r/IELTS/?utm_source=chatgpt.com)
+
+这个不是传统意义上的学习群，但非常适合寻找**认真备考的人**。
+
+最近就有很多人主动寻找：
+
+- Speaking partner
+- Writing partner
+- 长期 study buddy
+- Band 6 → 7 的学习搭档
+
+例如最近有人明确寻找 **Band 6/6.5 → Band 8** 的长期搭档，准备固定练 Speaking、Writing。([Reddit][3])
+
+而且 Reddit 的 IELTS 社区本身还有官方 Discord 口语练习服务器，免费、房间人数限制在约 4 人，比较适合真正开口练习。([Reddit][4])
+
+---
+
+## 你不要找“大群”，找“小组”
+
+这是最关键的。
+
+我不建议你加入一个：
+
+> 500人微信群 → 每天发资料 → 老师广告 → 打卡截图 → 很少真正学习
+
+这种群。
+
+你真正需要的是：
+
+> **3～5个人 + 相近水平 + 相同目标 + 固定时间 + 每周固定任务。**
+
+例如：
+
+```text
+目标：IELTS 7.0
+
+周一～周五
+每天 60 分钟
+
+19:30–20:00 Reading / Listening
+20:00–20:30 Speaking
+
+周三：
+Writing Task 2
+
+周日：
+完整模考 + 复盘
+```
+
+这样学习氛围会明显比大群好。
+
+---
+
+## 如果是你，我会这样加入
+
+你现在准备**自学 + 尽量低成本**，我建议：
+
+**① 加 IELTS Prep Discord**
+
+→ 找 Speaking partner
+
+**② 加 IELTS International**
+
+→ 做每日打卡
+
+**③ Reddit r/IELTS**
+
+→ 找一个与你目标分数接近的人，组成长期小组
+
+最终形成：
+
+> **官方真题 + ChatGPT + 3人学习小组 + 每日打卡**
+
+这已经足够构成一个非常低成本的 IELTS 备考系统。
+
+另外，最近的 IELTS 备考者反馈也很支持这一点：有人分享自己从 **6.0 → 6.5 → 7.5**，认为小组提供的固定 Speaking、Writing 反馈和持续陪伴明显改善了完全独自备考时的问题。([Reddit][5])
+
+**如果你愿意，我还可以直接帮你筛选“中文学习群”——重点找微信/QQ/Telegram 中那种真正有固定打卡、口语搭子、作文互批的群，而不是广告群。**
+
+[1]: https://discord.com/servers/ielts-prep-868524158743633981?utm_source=chatgpt.com "IELTS Prep - Discord Server"
+[2]: https://www.ielts.international/discord?utm_source=chatgpt.com "IELTS Discord Community — IELTS International"
+[3]: https://www.reddit.com/r/IELTS/comments/1v02dzt/i_am_looking_for_speaking_and_study_partner/?utm_source=chatgpt.com "I am looking for speaking and study partner."
+[4]: https://www.reddit.com/r/IELTS/comments/1jmhk6p?utm_source=chatgpt.com "Our Community's Official Discord Server for Speaking Practice"
+[5]: https://www.reddit.com/r/ieltsexperience/comments/1udacra/with_everything_going_on_with_ielts_scores_lately/?utm_source=chatgpt.com "with everything going on with IELTS scores lately, having a group of people to talk to has genuinely helped my sanity"
+** 给我一些片段时间可以学习的雅思内容，先给我一周的学习片段
+可以。你现在更适合**碎片化学习**，不要把 IELTS 变成每天必须坐下来 2 小时的大任务。
+
+我给你安排一个 **7 天循环**，每次只有 **10～25 分钟**。核心是：**听、读、词汇、口语、写作轮换**。
+
+## 一周碎片学习计划
+
+| 天  | 10～15分钟            | 15～25分钟         | 适合碎片时间     |
+| -- | ------------------ | --------------- | ---------- |
+| 周一 | IELTS Listening 精听 | 口语 Part 1       | 散步/坐车 + 晚上 |
+| 周二 | IELTS Reading 小段   | 词汇              | 午休         |
+| 周三 | Listening 精听       | Speaking Part 2 | 散步         |
+| 周四 | Reading 小段         | Writing Task 2  | 午休/晚上      |
+| 周五 | 听力错题               | Speaking Part 3 | 碎片时间       |
+| 周六 | Reading 完整 Passage | Writing         | 30～60分钟    |
+| 周日 | 小型模考               | 一周复盘            | 45～60分钟    |
+
+---
+
+# Day 1｜Listening
+
+### 碎片时间：10～15分钟
+
+找一段 **IELTS Listening Section 1**。
+
+不要直接看答案。
+
+按照：
+
+```text
+听一遍
+↓
+做题
+↓
+检查答案
+↓
+重新听错题
+↓
+看 transcript
+```
+
+重点不是刷题数量。
+
+而是找：
+
+> **为什么我没听出来？**
+
+例如：
+
+```text
+reservation
+```
+
+你可能认识这个词，但是听的时候没反应出来。
+
+这就是需要训练的地方。
+
+### 晚上：10分钟 Speaking
+
+回答：
+
+> Where do you live?
+
+> What do you like about your hometown?
+
+> What do you usually do after work?
+
+每个问题回答 **30～60秒**。
+
+可以直接用 ChatGPT 当考官。
+
+---
+
+# Day 2｜Reading
+
+### 碎片时间：15分钟
+
+拿 IELTS Reading 的一个 Passage。
+
+今天**不要做完整文章**。
+
+只做：
+
+> 5～7道题。
+
+重点训练：
+
+**题目 → 定位 → 原文 → 同义替换**
+
+例如：
+
+题目：
+
+> The number of visitors increased rapidly.
+
+原文可能写：
+
+> There was a sharp rise in the number of tourists.
+
+你要逐渐建立：
+
+> increased rapidly = sharp rise
+
+这种识别能力。
+
+### 再花5分钟
+
+把今天遇到的 **3～5个真正重要的词**记下来。
+
+不要抄20～30个。
+
+---
+
+# Day 3｜Listening + Speaking
+
+### Listening：15分钟
+
+今天做 **Section 2**。
+
+重点训练：
+
+> **预测答案**
+
+例如：
+
+> The museum opens at ______.
+
+在听之前，你就应该意识到：
+
+**这里大概率是时间。**
+
+这种预测能力对 IELTS Listening 很重要。
+
+---
+
+### Speaking：10分钟
+
+Part 2。
+
+题目：
+
+> Describe a place you like to visit.
+
+准备：
+
+```text
+Where
+When
+Who
+What you do there
+Why you like it
+```
+
+然后连续说：
+
+**1～2分钟。**
+
+不要写完整稿子。
+
+只写几个关键词。
+
+---
+
+# Day 4｜Reading + Writing
+
+### Reading：15分钟
+
+继续 Passage。
+
+今天专门练：
+
+**True / False / Not Given**
+
+这是很多人容易混淆的题型。
+
+记住：
+
+> **False ≠ 原文没说**
+
+而是：
+
+> 原文明确与题目相反 → False
+> 原文没有足够信息 → Not Given
+
+---
+
+### Writing：15分钟
+
+只练一个东西：
+
+**Task 2 开头段。**
+
+例如题目：
+
+> Some people believe that technology has made our lives easier, while others think it has made life more complicated. Discuss both views and give your opinion.
+
+不要写完整作文。
+
+只写：
+
+**2～4句话。**
+
+然后让我帮你修改。
+
+这样碎片时间也能持续提高 Writing。
+
+---
+
+# Day 5｜Listening + Speaking
+
+### Listening：10分钟
+
+把本周做过的**错题重新听**。
+
+这是非常重要的一步。
+
+不要每天不停做新题。
+
+你应该：
+
+> 错题 → 找原因 → 重听 → 听懂
+
+---
+
+### Speaking：15分钟
+
+练 Part 3。
+
+例如：
+
+> How has technology changed people's way of communicating?
+
+回答：
+
+**观点 → 原因 → 例子**
+
+例如：
+
+```text
+I think technology has made communication much easier.
+
+The main reason is that...
+
+For example...
+```
+
+不要追求复杂词汇。
+
+先训练**连续表达和逻辑**。
+
+---
+
+# Day 6｜稍微增加时间
+
+今天有时间的话，做：
+
+### Reading
+
+完整一个 Passage：
+
+**20分钟左右**
+
+严格计时。
+
+记录：
+
+```text
+正确：__/13
+用时：__分钟
+```
+
+然后分析错题。
+
+---
+
+### Writing
+
+写一篇：
+
+**Task 2，40分钟**
+
+不要求写得完美。
+
+写完以后把全文给我，我可以按照 IELTS 四项评分标准：
+
+* Task Response
+* Coherence & Cohesion
+* Lexical Resource
+* Grammatical Range & Accuracy
+
+给你估分。
+
+---
+
+# Day 7｜复盘
+
+不要大量做新题。
+
+只做：
+
+### ① Listening
+
+重新听本周最难的一段。
+
+### ② Vocabulary
+
+看看这周记录的词。
+
+不要强行背。
+
+尝试自己造句。
+
+### ③ Speaking
+
+重新回答 Day 1 的：
+
+> Where do you live?
+
+然后比较：
+
+**Day 1 vs Day 7**
+
+### ④ 总结
+
+只写三句话：
+
+```text
+这周我最明显的问题：
+______
+
+这周我学会的东西：
+______
+
+下周最应该解决的问题：
+______
+```
+
+---
+
+# 你的碎片时间怎么利用
+
+你不需要专门找一个“完整学习时间”。
+
+可以这样：
+
+**早上/通勤**
+
+> Listening 10～20分钟
+
+**午休**
+
+> Reading 10～15分钟
+
+**散步**
+
+> Speaking 10～15分钟
+
+**晚上电脑前**
+
+> Writing 15～30分钟
+
+这样一天累计：
+
+**30～60分钟**
+
+就已经够用了。
+
+---
+
+## 最重要的一点
+
+不要把 IELTS 学习变成：
+
+> **看课程 → 做笔记 → 收藏资料 → 找学习方法**
+
+而应该变成：
+
+> **直接做题 → 暴露问题 → 针对问题训练 → 再测试**
+
+你的碎片时间尤其应该遵循这个原则。
+
+### 这一周只需要准备三个东西
+
+**① IELTS 官方真题**
+
+**② 一个 Org 文件记录错题**
+
+例如：
+
+```org
+* IELTS
+** Listening
+*** 2026-09-01
+- reservation 没听出来
+- 数字拼写错误
+- 被干扰项误导
+
+** Reading
+*** 2026-09-02
+- T/F/NG 判断错误
+
+** Speaking
+*** 2026-09-03
+- 停顿太多
+- 时态错误
+```
+
+**③ ChatGPT**
+
+用来做：
+
+> Speaking 考官 + Writing 批改 + 错题解释 + 英语对话
+
+这样你基本不需要购买课程，就可以开始。
+
+如果你愿意，我也可以**从今天的 Day 1 直接开始给你出一组 10 分钟 IELTS 碎片练习**，你不用另外找题。
+
+** 给我一周的大学物理学习片段
+可以。大学物理如果用**碎片时间学习**，我建议不要一开始追求完整章节，而是采用：
+
+> **一个概念 → 一个公式 → 一个物理图像 → 一个小题**
+
+每天 **20～30 分钟**即可。
+
+下面给你安排第一周，主题是最基础、也是后面力学的核心：**运动学 + 牛顿力学**。
+
+## 第一周：大学物理力学入门
+
+| 天  | 核心内容      | 碎片任务          |
+| -- | --------- | ------------- |
+| 周一 | 位移、速度、加速度 | 理解三个概念 + 2题   |
+| 周二 | 匀变速直线运动   | 公式推导 + 2题     |
+| 周三 | 牛顿三定律     | 理解受力关系 + 2题   |
+| 周四 | 受力分析      | 画自由体图 + 3题    |
+| 周五 | 摩擦力       | 静摩擦/滑动摩擦 + 2题 |
+| 周六 | 功与动能      | 理解功-能关系 + 3题  |
+| 周日 | 一周综合      | 30分钟小测 + 总结   |
+
+---
+
+# Day 1：位移、速度、加速度
+
+### 10分钟：概念
+
+理解：
+
+**位移**
+
+$$
+\Delta x=x_2-x_1
+$$
+
+**平均速度**
+
+$$
+v=\frac{\Delta x}{\Delta t}
+$$
+
+**加速度**
+
+$$
+a=\frac{\Delta v}{\Delta t}
+$$
+
+不要急着背公式。
+
+你需要理解：
+
+> 速度描述“位置变化有多快”。
+
+> 加速度描述“速度变化有多快”。
+
+### 10分钟：思考
+
+汽车：
+
+```text
+0 → 20 → 40 → 60 km/h
+```
+
+问自己：
+
+> 汽车有没有速度？
+
+有。
+
+> 汽车有没有加速度？
+
+有。
+
+> 当汽车保持60 km/h匀速直线行驶时，加速度是多少？
+
+**0。**
+
+这是大学物理非常重要的概念：
+
+> **有速度 ≠ 有加速度。**
+
+---
+
+# Day 2：匀变速运动
+
+掌握三个基本公式：
+
+$$
+v=v_0+at
+$$
+
+$$
+x=x_0+v_0t+\frac12at^2
+$$
+
+$$
+v^2-v_0^2=2a(x-x_0)
+$$
+
+### 碎片练习
+
+一辆车：
+
+> 初速度 10 m/s
+> 加速度 2 m/s²
+> 经过 5 秒
+
+问：
+
+**最终速度是多少？**
+
+你应该能够直接：
+
+$$
+v=10+2\times5=20m/s
+$$
+
+然后再问：
+
+> 这5秒走了多远？
+
+这时候使用位移公式。
+
+---
+
+# Day 3：牛顿三定律
+
+今天不要背定义。
+
+理解三个核心：
+
+### 第一律
+
+没有合外力：
+
+$$
+\sum F=0
+$$
+
+物体保持原来的运动状态。
+
+---
+
+### 第二律
+
+$$
+\boxed{F=ma}
+$$
+
+这是整个经典力学的核心。
+
+理解：
+
+> **力不是产生速度，而是产生加速度。**
+
+---
+
+### 第三律
+
+作用力和反作用力：
+
+$$
+F_{AB}=-F_{BA}
+$$
+
+例如你推墙：
+
+> 你推墙 → 墙也推你。
+
+---
+
+### 今天思考一个问题
+
+为什么汽车踩油门以后会加速？
+
+不是：
+
+> 发动机产生“速度”。
+
+而是：
+
+> 发动机 → 驱动车轮 → 轮胎与地面产生作用力 → 汽车获得合力 → 加速度。
+
+---
+
+# Day 4：自由体图
+
+这是大学物理非常重要的技能。
+
+看到一个物体：
+
+```text
+      N
+      ↑
+      ● → F
+      ↓
+      mg
+```
+
+你要学会把所有作用在物体上的力画出来。
+
+例如桌子上的书：
+
+```text
+      N
+      ↑
+    [书]
+      ↓
+      mg
+```
+
+如果书静止：
+
+$$
+N=mg
+$$
+
+---
+
+### 今天只练这个
+
+找家里三个物体：
+
+* 手机
+* 水杯
+* 椅子
+
+分别问：
+
+> 它受到哪些力？
+
+然后画出来。
+
+这比看20分钟视频有效。
+
+---
+
+# Day 5：摩擦力
+
+理解两个概念。
+
+### 静摩擦
+
+物体还没有滑动。
+
+$$
+f_s\leq \mu_sN
+$$
+
+注意：
+
+**不是永远等于 \(\mu_sN\)。**
+
+---
+
+### 滑动摩擦
+
+已经发生相对滑动：
+
+$$
+f_k=\mu_kN
+$$
+
+通常：
+
+$$
+\mu_s>\mu_k
+$$
+
+---
+
+### 思考
+
+为什么你推一个很重的箱子：
+
+> 一开始很难推动
+
+但：
+
+> 推动以后反而容易？
+
+因为最大静摩擦力通常大于滑动摩擦力。
+
+---
+
+# Day 6：功与动能
+
+这是从“力”进入“能量”的关键。
+
+### 功
+
+$$
+W=Fs\cos\theta
+$$
+
+### 动能
+
+$$
+K=\frac12mv^2
+$$
+
+最重要的关系：
+
+$$
+\boxed{W_{\text{net}}=\Delta K}
+$$
+
+也就是：
+
+> **合力做的功 = 动能的变化。**
+
+---
+
+### 一个简单问题
+
+一个物体速度从：
+
+$$
+10m/s\rightarrow20m/s
+$$
+
+质量不变。
+
+动能增加多少倍？
+
+因为：
+
+$$
+K\propto v^2
+$$
+
+所以：
+
+$$
+\frac{20^2}{10^2}=4
+$$
+
+**动能变成4倍。**
+
+这是大学物理里非常重要的“平方关系”直觉。
+
+---
+
+# Day 7：综合测试
+
+今天不要学新知识。
+
+用30分钟解决下面几个问题。
+
+### 题1
+
+一个物体：
+
+$$
+v_0=0
+$$
+
+$$
+a=2m/s^2
+$$
+
+经过5秒：
+
+**①速度多少？**
+
+**②位移多少？**
+
+---
+
+### 题2
+
+质量：
+
+$$
+m=5kg
+$$
+
+受到水平合力：
+
+$$
+F=20N
+$$
+
+加速度是多少？
+
+---
+
+### 题3
+
+一个物体静止在桌面上。
+
+请画出它的：
+
+**自由体图。**
+
+---
+
+### 题4
+
+为什么静摩擦力不能简单写成：
+
+$$
+f=\mu_sN
+$$
+
+---
+
+### 题5
+
+一个物体速度从10 m/s增加到30 m/s。
+
+它的动能增加多少倍？
+
+---
+
+# 每天真正需要做的事情
+
+你的碎片学习不要变成“看课”。
+
+每天只做：
+
+```text
+5分钟：理解概念
+        ↓
+5分钟：自己解释
+        ↓
+10分钟：做题
+        ↓
+5分钟：记录一个关键点
+```
+
+你的 Org 笔记甚至只需要：
+
+```org
+* 大学物理
+** Week 1
+*** 加速度
+速度变化率，不是速度本身。
+
+*** 牛顿第二定律
+F = ma
+
+*** 功-能定理
+W_net = ΔK
+
+*** 今天没理解
+为什么静摩擦力不是永远 μN？
+```
+
+尤其考虑到你前面说**不太复习笔记**，这里不要建立大量笔记。每天只留下**一个自己真正理解的东西 + 一个没理解的问题**。
+
+第二周可以继续：
+
+> **Week 2：圆周运动 → 万有引力 → 动量 → 碰撞**
+
+这样逐步建立真正的大学物理框架，而不是碎片化地背公式。
+
+
+** 大学心理学片段
+** 大学经济金融学片段
