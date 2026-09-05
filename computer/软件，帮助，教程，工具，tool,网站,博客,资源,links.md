@@ -31,3 +31,10 @@ https://www.reddit.com/search/?q={query}
 http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={query}
 
 https://www.tiktok.com/search/video?q={query}
+
+## 在终端显示 PNG 图片
+
+ **chafa**（推荐，字符/半色块显示）
+   ```bash
+   chafa image.png
+   ```
