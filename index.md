@@ -9,7 +9,8 @@ title: 我的知识库
 
 ## 笔记
 
-- [笔记] ({{ site.baseurl }}/note.html)
+- [笔记]({{ site.baseurl }}/note.html)
+
 ## 写作
 
 - [第一篇文章]({{ site.baseurl }}/books/myfirstpage.html)
