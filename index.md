@@ -7,6 +7,9 @@ title: 我的知识库
 
 个人知识库 / second brain。
 
+## 笔记
+
+- [笔记] ({{ site.baseurl }}/note.html)
 ## 写作
 
 - [第一篇文章]({{ site.baseurl }}/books/myfirstpage.html)
