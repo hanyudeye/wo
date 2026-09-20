@@ -1,135 +1,92 @@
----
----
-# QUESTIONS
+# tmux（Oh my tmux!）配置笔记
 
-## tmux 如何开启鼠标控制
+基于 gpakosz/Oh my tmux!（`~/.tmux`），自定义一律改 `.tmux.conf.local`，不改主配置文件。
+按 `<prefix> e`（`C-a e` 或 `C-b e`）打开本地配置文件。
 
+## 已开启的实用配置
 
-To enable mouse control in tmux, you can use the following commands:
+```tmux
+# -- clipboard
+# 复制模式下选中内容同时复制到系统剪贴板（Linux 需 xsel/xclip/wl-copy）
+tmux_conf_copy_to_os_clipboard=true
 
-1. Start tmux: `tmux`
-2. Enable mouse mode: `Ctrl+B` then `m` (or `C-m`)
-3. Confirm that mouse mode is enabled by typing `~` to see the current pane status
+# 终端编辑模式，使用 ctrl+a [ 进入（vim 风格）
+set -g status-keys vi
+set -g mode-keys vi
 
-Now you can use your mouse to interact with tmux panes and windows.
+# 新 pane 保留当前路径（默认已开）
+tmux_conf_new_pane_retain_current_path=true
 
-Alternatively, you can set the `mouse-select-pane` option to `on` in your tmux configuration file (`~/.tmux.conf`) to enable mouse control by default:
+# TPM 插件启动/重载时自动更新
+tmux_conf_update_plugins_on_launch=true
+tmux_conf_update_plugins_on_reload=true
 
+# Alt+Up / Alt+Down 模拟 PageUp / PageDown（对所有 tmux 内程序生效）
+bind -n M-Up send-keys PPage
+bind -n M-Down send-keys NPage
 ```
-set-option -g mouse-select-pane on
+
+## 值得开启的配置
+
+### 推荐开启
+
+```tmux
+# 高亮当前 pane，多窗格时一眼看清焦点（.tmux.conf.local:133）
+tmux_conf_theme_highlight_focused_pane=true
+
+# 新窗口保留当前目录，与 pane 行为保持一致（:41）
+tmux_conf_new_window_retain_current_path=true
+
+# 加大历史回滚行数，默认 2000 太少（:404）
+set -g history-limit 5000
 ```
 
-## tmux 打开的 ssh 掉线了，如何重新打开
+### 按需开启
 
-这是 `tmux` 的核心设计功能。当 SSH 连接断开时，由于您的工作进程是在远程服务器上的 `tmux` 会话中运行的，这些进程会继续在后台运行（不会受到本地网络波动影响）。
+```tmux
+# 新 session 也保留当前路径（:32）
+tmux_conf_new_session_retain_current_path=true
 
-您只需要重新通过 SSH 登录到服务器，然后**重新挂载 (reattach)** 到那个仍然存活的 `tmux` 会话即可。
+# 新窗口/新 pane 自动重连 SSH，常切换远程服务器时很实用（:47、:59）
+tmux_conf_new_window_reconnect_ssh=true
+tmux_conf_new_pane_reconnect_ssh=true
 
----
+# Powerline 风格分隔符，字体支持时解开注释（:244-247）
+tmux_conf_theme_left_separator_main='\uE0B0'
+tmux_conf_theme_left_separator_sub='\uE0B1'
+tmux_conf_theme_right_separator_main='\uE0B2'
+tmux_conf_theme_right_separator_sub='\uE0B3'
+```
 
-### 🎣 重连步骤
+### 会话持久化插件（TPM）
 
-1. **SSH 回去**
-   首先使用您的用户名和密码或密钥，重新连接到远程服务器：
-   ```bash
-   ssh user@your_server_ip
-   ```
+```tmux
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+set -g @continuum-restore 'on'
+```
 
-2. **查看会话列表 (可选)**
-   执行以下命令确认您上次的工作会话仍在运行：
-   ```bash
-   tmux ls
-   ```
-   这会列出所有活动的 `tmux` 会话名称（例如：`session1: 1 windows (created)`）。
+- 安装插件 `<prefix> I`，更新 `<prefix> u`，卸载 `<prefix> M-u`
+- 不要手动加 `set -g @plugin 'tmux-plugins/tpm'` 和 `run '~/.tmux/plugins/tpm/tpm'`
 
-3. **重新挂载**
-   使用 `-t` 参数指定您的会话名称，或者直接使用 `attach` 命令如果只有一个活动会话的话。
-   ```bash
-   # 如果您知道会话名，推荐用这个：
-   tmux attach -t session_name 
+### 自定义状态栏变量
 
-   # 如果是唯一一个会话，可以直接用：
-   tmux a 
-   ```
+在 `.tmux.conf.local` 底部的 `# EOF`…`# "$@"` 之间定义 POSIX shell 函数，
+即可在 `tmux_conf_theme_status_left/right` 里用 `#{变量名}` 调用，例如天气、公网 IP。
 
-您的工作环境和所有窗口（Panes/Windows）都会恢复到断开连接前的状态。
+## 常用按键速查
 
-## 安装插件 
+- `<prefix> +` 最大化当前 pane 到新窗口，再按一次还原
+- `<prefix> m` 开关鼠标模式
+- `C-l` 同时清屏并清除 tmux 历史
+- `<prefix> C-c` 新建会话，`<prefix> BTab` 回到上个会话
+- `<prefix> h/j/k/l` Vim 方式切换 pane，`H/J/K/L` 调整大小
+- `<prefix> -` / `<prefix> _` 垂直/水平分割
+- `<prefix> Tab` 回到上个窗口，`<prefix> C-h/C-l` 左右切换窗口
+- `<prefix> b` 列出粘贴缓冲区，`<prefix> p` 粘贴，`<prefix> P` 选择粘贴
 
-1. 在 tmux 里按 <prefix> + r（即先按 Ctrl+b，松开后再按 r）
-2. 观察底部状态栏，应该会显示 "Installing tpm and plugins..." 等提示
-3. 安装完成后底栏会显示 "Done installing tpm and plugins..."
+## 注意
 
-如果 <prefix> + r 没反应，也可以直接退出所有 tmux 会话后执行：
-tmux kill-server && tmux
-
-
-## tmux 如何保存打开的窗口状态
-
-
-1. tmux 自带：没有原生保存功能，但可以用脚本保存布局：
-
-tmux list-windows -a -F "#{window_index} #{pane_index} #{pane_current_command}"
-配合 tmux new-session + tmux send-keys 手动恢复。
-
-2. 插件（推荐）：tmux-resurrect (https://github.com/tmux-plugins/tmux-resurrect)
-- 保存：prefix + Ctrl-s
-- 恢复：prefix + Ctrl-r
-- 保存内容包含窗口、面板、路径、运行程序等
-
-配合 tmux-continuum (https://github.com/tmux-plugins/tmux-continuum) 可实现自动每隔 15 分钟保存 + 开机自动恢复。
-
-## key short
-
-C-b C-b     Send the prefix key
-C-b C-o     Rotate through the panes
-C-b C-z     Suspend the current client
-C-b Space   Select next layout
-C-b !       Break pane to a new window
-C-b #       List all paste buffers
-C-b $       Rename current session
-C-b &       Kill current window
-C-b '       Prompt for window index to select
-C-b (       Switch to previous client
-C-b )       Switch to next client
-C-b ,       Rename current window
-C-b .       Move the current window
-C-b /       Describe key binding
-C-b 0       Select window 0
-C-b 1       Select window 1
-C-b 2       Select window 2
-C-b 3       Select window 3
-C-b 4       Select window 4
-C-b 5       Select window 5
-C-b 6       Select window 6
-C-b 7       Select window 7
-C-b 8       Select window 8
-C-b 9       Select window 9
-C-b :       Prompt for a command
-C-b ;       Move to the previously active pane
-C-b =       Choose a paste buffer from a list
-C-b ?       List key bindings
-C-b C       Customize options
-C-b D       Choose and detach a client from a list
-C-b E       Spread panes out evenly
-C-b M       Clear the marked pane
-C-b [       Enter copy mode
-C-b ]       Paste the most recent paste buffer
-C-b d       Detach the current client
-C-b f       Search for a pane
-C-b i       Display window information
-C-b o       Select the next pane
-C-b q       Display pane numbers
-C-b s       Choose a session from a list
-C-b t       Show a clock
-C-b w       Choose a window from a list
-C-b x       Kill the active pane
-
-
-select-layout even-horizontal 左右布局
-select-layout even-vertical 上下布局
-
-
-## tmux 状态栏 不要显示 用户名和计算机名
-
-移除 .tmux.conf.local:274 中的 #{username}#{root} 和 #{hostname}。重载 tmux 配置（<prefix> + r）即可生效。
+- 主配置文件 `.tmux.conf` 不要直接改，改动会被更新覆盖
+- 若某条设置被 Oh my tmux! 覆盖，在该行末尾加 `#!important`
+- 状态栏对 Unicode 9 宽度符号敏感，旧 glibc（< 2.26）下可能显示错位
