@@ -15,6 +15,11 @@ title: 我的知识库
 
 - [第一篇文章]({{ site.baseurl }}/books/myfirstpage.html)
 
+## 生活
+
+- [家务活]({{ site.baseurl }}/living/家务活.html)
+- [冰箱除霜]({{ site.baseurl }}/living/冰箱除霜.html)
+
 ## 计算机
 
 - [计算机]({{ site.baseurl }}/computer/计算机.html)
