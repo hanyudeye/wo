@@ -6,3 +6,6 @@
 个人，组成了社会，但独立生活的，会自私吗
 
 AI现在的思维比较精明
+
+## 下载读书软件，3个平台都可以
+https://koodoreader.com/zh/download
