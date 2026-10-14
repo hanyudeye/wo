@@ -7,6 +7,10 @@ title: 我的知识库
 
 个人知识库 / second brain。
 
+## 改变"恶"习
+
+- [恶习]({{ site.baseurl }}/record/e.html)
+
 ## 笔记
 
 - [笔记]({{ site.baseurl }}/note.html)
