@@ -9,3 +9,7 @@ AI现在的思维比较精明
 
 ## 下载读书软件，3个平台都可以
 https://koodoreader.com/zh/download
+
+## 2026-10-15
+
+使用 vivaldi ，下载 vim ,沉浸翻译，专门看资讯信息，快捷键设置为 最方便的 ,如 win+a
