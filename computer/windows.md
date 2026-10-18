@@ -141,3 +141,6 @@ Get-FileHash WeChatSetup.exe -Algorithm MD5
 Get-FileHash WeChatSetup.exe -Algorithm SHA256
 ```
 
+## photo ,拍照
+
+自带应用 拍照
