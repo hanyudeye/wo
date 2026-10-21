@@ -27,11 +27,11 @@ title: 我的知识库
 ## 持续`投资`
 
 
-
 - [健康饮食]({{ site.baseurl }}/living/diet.html)
 - [运动]({{ site.baseurl }}/do/2026-10-21-do-exercise.html)
 - [投资指数基金]({{ site.baseurl }}/do/2026-10-21-keep-investing.html)
-- [种植蔬菜]({{ site.baseurl }}/ living/grow-vegetables.html)
+- [种植蔬菜]({{ site.baseurl }}/living/grow-vegetables.html)
+- [英语日常对话]({{ site.baseurl }}/living/daily-english-conversation.html)
 
 ## 思考人生
 
