@@ -9,8 +9,8 @@ title: 我的知识库
 
 ## 体验生命
 
-- [给文件命名]({{ site.baseurl }}/do/26-10-21-give-a-name-to-blog-file.html)
-- [缝补衣服]({{ site.baseurl }}/do/26-10-21-mend-clothes.html)
+- [给文件命名]({{ site.baseurl }}/do/2026-10-21-give-a-name-to-blog-file.html)
+- [缝补衣服]({{ site.baseurl }}/do/2026-10-21-mend-clothes.html)
 
 ## 改变"恶"习
 
