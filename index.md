@@ -23,14 +23,16 @@ title: 我的知识库
 - [间断性休息]({{ site.baseurl }}/do/2026-10-21-intermittent-rest.html)
 - [改善生活的100件值得做的事情]({{ site.baseurl }}/do/2026-10-21-100-worthwhile-things-to-do-to-improve-life.html)
 
+
 ## 持续`投资`
 
 - [运动与健康饮食]({{ site.baseurl }}/do/2026-10-21-do-exercise.html)
 - [投资指数基金]({{ site.baseurl }}/do/2026-10-21-keep-investing.html)
 
 
-## 笔记
+## 思考人生
 
+- [人生]({{ site.baseurl }}/living/2026-10-21-life.html)
 - [笔记]({{ site.baseurl }}/note.html)
 
 ## 写作规范
