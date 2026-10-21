@@ -21,6 +21,7 @@ title: 我的知识库
 
 - [恶习]({{ site.baseurl }}/record/e.html)
 - [间断性休息]({{ site.baseurl }}/do/2026-10-21-intermittent-rest.html)
+- [改善生活的100件值得做的事情]({{ site.baseurl }}/do/2026-10-21-100-worthwhile-things-to-do-to-improve-life.html)
 
 ## 持续`投资`
 
