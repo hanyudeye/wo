@@ -9,6 +9,7 @@ title: 我的知识库
 
 ## 体验生命
 
+- [冰箱除霜]({{ site.baseurl }}/do/2026-9-28-defrose-the-bridge.html)
 - [给文件命名]({{ site.baseurl }}/do/2026-10-21-give-a-name-to-blog-file.html)
 - [缝补衣服]({{ site.baseurl }}/do/2026-10-21-mend-clothes.html)
 
