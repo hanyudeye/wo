@@ -7,6 +7,11 @@ title: 我的知识库
 
 个人知识库 / second brain。
 
+## 体验生命
+
+- [给文件命名]({{ site.baseurl }}/do/26-10-21-give-a-name-to-blog-file.html)
+- [缝补衣服]({{ site.baseurl }}/do/26-10-21-mend-clothes.html)
+
 ## 改变"恶"习
 
 - [恶习]({{ site.baseurl }}/record/e.html)
