@@ -1,11 +1,3 @@
----
-layout: default
-toc: false
-title: 2025-08-13坚持理财，我理财经历一年后的感想
-date:  2025-08-13T13:34:31+08:00
-permalink: investment-experience-fund-dingtou
-description: "理财新手必看！分享我在支付宝基金定投一年的真实收益和经验，附投资习惯、资产配置技巧，帮你开启理财第一步。"
----
 
 ## **坚持理财，一年后的惊喜**
 
