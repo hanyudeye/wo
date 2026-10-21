@@ -20,7 +20,13 @@ title: 我的知识库
 ## 改变"恶"习
 
 - [恶习]({{ site.baseurl }}/record/e.html)
-- [间断性休息]({{ site.baseurl }}/do/2023-10-21-intermittent-rest.html)
+- [间断性休息]({{ site.baseurl }}/do/2026-10-21-intermittent-rest.html)
+
+## 持续`投资`
+
+- [运动与健康饮食]({{ site.baseurl }}/do/2026-10-21-do-exercise.html)
+- [投资指数基金]({{ site.baseurl }}/do/2026-10-21-keep-investing.html)
+
 
 ## 笔记
 
