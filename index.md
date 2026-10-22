@@ -43,6 +43,9 @@ title: 我的知识库
 ## 思考人生
 
 - [人生]({{ site.baseurl }}/living/life.html)
+- [学会学习]({{ site.baseurl }}/living/learn.html)
+- [简单生活]({{ site.baseurl }}/living/simpleliving.html)
+- [积极乐观，少看负面消息]({{ site.baseurl }}/living/positive.html)
 - [笔记]({{ site.baseurl }}/note.html)
 
 ## 写作规范
