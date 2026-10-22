@@ -7,6 +7,11 @@ title: 我的知识库
 
 远离焦虑，珍爱生活
 
+## 当前可用资产
+
+
+- [资产]({{ site.baseurl }}/do/money.html)
+
 ## 体验生命
 
 - [布置厨房]({{ site.baseurl }}/do/2026-10-22-set-up-the-kitchen.html)
