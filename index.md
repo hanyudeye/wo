@@ -34,6 +34,7 @@ title: 我的知识库
 ## 持续`投资`
 
 
+- [长期任务]({{ site.baseurl }}/living/jobs.html)
 - [英语]({{ site.baseurl }}/living/english.html)
 - [健康饮食]({{ site.baseurl }}/living/diet.html)
 - [运动]({{ site.baseurl }}/do/2026-10-21-do-exercise.html)
@@ -43,6 +44,7 @@ title: 我的知识库
 
 ## 思考人生
 
+- [反思]({{ site.baseurl }}/living/reflect.html)
 - [人生]({{ site.baseurl }}/living/life.html)
 - [学会学习]({{ site.baseurl }}/living/learn.html)
 - [简单生活]({{ site.baseurl }}/living/simpleliving.html)
