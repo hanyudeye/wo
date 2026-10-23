@@ -47,6 +47,7 @@ title: 我的知识库
 - [反思]({{ site.baseurl }}/living/reflect.html)
 - [人生]({{ site.baseurl }}/living/life.html)
 - [学会学习]({{ site.baseurl }}/living/learn.html)
+- [职业规划]({{ site.baseurl }}/living/career-planning.html)
 - [简单生活]({{ site.baseurl }}/living/simpleliving.html)
 - [积极乐观，少看负面消息]({{ site.baseurl }}/living/positive.html)
 - [笔记]({{ site.baseurl }}/note.html)
