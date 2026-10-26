@@ -64,3 +64,4 @@ title: 我的知识库
 ## 计算机
 
 - [好用软件]({{ site.baseurl }}/computer/2026-10-22-good-soft.html)
+- [安全使用电脑]({{ site.baseurl }}/computer/2026-10-26-use-the-computer-safely.html)
