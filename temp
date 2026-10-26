@@ -1,0 +1,44 @@
+我帮你在 GitHub 上搜索了几组关键词，找到了不少跟你 `wo` 仓库很像的个人知识库 / 生活感想类仓库。以下是值得参考的，按类型整理：
+
+---
+
+### 1. 中文个人“第二大脑 / 数字花园”（最接近你的 `wo`）
+
+| 仓库 | 特点 | 链接 |
+|------|------|------|
+| **oldwinter/knowledge-garden** | 自描述“我的第二大脑 second brain，我的数字花园 digital garden，用 Obsidian 双链笔记软件写作而成”。中文，Obsidian 风格。 | https://github.com/oldwinter/knowledge-garden |
+| **zhiwehu/second-brain** | 中文第二大脑，有 `wiki/`、`raw/` 等目录分区，带 AI 处理模板，结构和你的 `technical/`、`living/` 分类思路很像。 | https://github.com/zhiwehu/second-brain |
+| **youjiali1995.github.io** (Building My Second Brain) | 记录碎片化知识 + 周度 working doc，适合修改和记录，有中文版。 | https://youjiali1995.github.io/essay/building-my-second-brain/ |
+
+---
+
+### 2. 英文个人知识库 / 数字花园（可参考结构和写作风格）
+
+| 仓库/站点 | 特点 | 链接 |
+|-----------|------|------|
+| **Andy Matuschak's notes** | Evergreen notes（常青笔记），公开写作思考的经典范例。 | https://notes.andymatuschak.org/ |
+| **JonasHass/knowledge** | “Everything I know”，数字花园 / 个人 wiki。 | https://github.com/JonasHass/knowledge |
+| **Tony Xu Blog (My second brain setup)** | Markdown 为主，脑内知识 + 收据（receipts），强调“less like a museum, more like a workshop”。 | https://tonyxu.io/blog/my-second-brain-setup/ |
+| **MaggieAppleton/digital-gardeners** | 数字花园资源目录，收录了很多个人花园/ wiki 链接和建站工具。 | https://github.com/MaggieAppleton/digital-gardeners |
+
+---
+
+### 3. GitHub 话题标签（可继续挖掘）
+
+- `knowledge-management`：约 5,466 个公开仓库
+- `pkm`（Personal Knowledge Management）：约 1,401 个公开仓库
+
+可以在 GitHub 上直接浏览这两个话题页，按 star 数或最近更新排序，找更多类似风格的仓库。
+
+---
+
+### 对你 `wo` 仓库的几点观察（跟上面这些仓库对比）
+
+你的 `wo` 已经有比较清晰的顶层分类（`computer/`、`living/`、`startup/`、`books/`、`技术/`），且以中文为主、Markdown 为主，文件名中英文混用，这和上面列出的 `oldwinter/knowledge-garden`、`zhiwehu/second-brain` 等思路非常一致。
+
+如果你想继续完善，可以参考：
+- 增加一个 `README` 或索引页，说明各目录用途（像 `zhiwehu/second-brain` 的目录说明）
+- 考虑双链（`[[笔记名]]`）风格，方便 Obsidian 风格的知识关联
+- 把 AI 对话记录 / prompt 模板单独归类（你已经在部分 `.md` 文件开头有了，可以考虑统一放到某个目录）
+
+需要我帮你把这些仓库的结构细节（比如目录划分、README 写法）深入看看，或者帮你在 GitHub 上搜更具体的某个主题（如“生活感想”“读书笔记”）吗？
