@@ -18,6 +18,7 @@ title: 我的知识库
 
 ## 体验生命
 
+- [如何产生吸引力]({{ site.baseurl }}/do/2026-10-27-law-of-attraction.html)
 - [日常生活习惯]({{ site.baseurl }}/do/2026-10-26-daily-schedule.html)
 - [布置厨房]({{ site.baseurl }}/do/2026-10-22-set-up-the-kitchen.html)
 - [改变习惯]({{ site.baseurl }}/do/2026-10-21-change-habits.html)
@@ -40,6 +41,7 @@ title: 我的知识库
 ## 持续`投资`
 
 
+- [不一样的信息]({{ site.baseurl }}/do/2026-10-27-different-information.html)
 - [长期任务]({{ site.baseurl }}/living/jobs.html)
 - [英语]({{ site.baseurl }}/living/english.html)
 - [健康饮食]({{ site.baseurl }}/living/diet.html)
