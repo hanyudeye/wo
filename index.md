@@ -13,7 +13,6 @@ title: 我的知识库
 
 ## 当前可用资产
 
-
 - [资产]({{ site.baseurl }}/do/money.html)
 
 ## 体验生命
@@ -59,7 +58,9 @@ title: 我的知识库
 - [职业规划]({{ site.baseurl }}/living/career-planning.html)
 - [简单生活]({{ site.baseurl }}/living/simpleliving.html)
 - [积极乐观，少看负面消息]({{ site.baseurl }}/living/positive.html)
-- [笔记]({{ site.baseurl }}/note.html)
+- [笔记]({{ site.baseurl }}/living/note.html)
+- [博友的价值观]({{ site.baseurl }}/record/2026-10-28-bloger-friend-values.html)
+
 
 ## 写作规范
 
