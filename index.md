@@ -9,7 +9,7 @@ title: 我的知识库
 
 接纳有缺陷的自己，已第三视角给自己的行为提供建议，才能改善自己的行为
 
-把修订此文档作为人生的重要 **目标**
+把修订此文档作为人生的重要 **目标**，想想自己当前状态对此项目是否产生积极影响
 
 ## 当前可用资产
 
@@ -32,7 +32,8 @@ title: 我的知识库
 
 ## 改变"恶"习
 
-- [恶习]({{ site.baseurl }}/record/e.html)
+- [恶习]({{ site.baseurl }}/living/e.html)
+- [屏蔽上瘾]({{ site.baseurl }}/living/addiction.html)
 - [间断性休息]({{ site.baseurl }}/do/2026-10-21-intermittent-rest.html)
 - [改善生活的100件值得做的事情]({{ site.baseurl }}/do/2026-10-21-100-worthwhile-things-to-do-to-improve-life.html)
 
@@ -40,6 +41,8 @@ title: 我的知识库
 ## 持续`投资`
 
 
+- [如何产生吸引力]({{ site.baseurl }}/do/2026-10-27-law-of-attraction.html)
+- [逆向思维信息]({{ site.baseurl }}/do/2026-10-27-different-information.html)
 - [长期任务]({{ site.baseurl }}/living/jobs.html)
 - [英语]({{ site.baseurl }}/living/english.html)
 - [健康饮食]({{ site.baseurl }}/living/diet.html)
