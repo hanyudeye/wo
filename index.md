@@ -18,6 +18,7 @@ title: 我的知识库
 
 ## 体验生命
 
+- [梵高传]({{ site.baseurl }}/do/2026-10-30-vincent-van-gogh.html)
 - [日常生活习惯]({{ site.baseurl }}/do/2026-10-26-daily-schedule.html)
 - [布置厨房]({{ site.baseurl }}/do/2026-10-22-set-up-the-kitchen.html)
 - [改变习惯]({{ site.baseurl }}/do/2026-10-21-change-habits.html)
