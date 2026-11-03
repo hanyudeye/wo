@@ -37,6 +37,10 @@ title: 我的知识库
 
 - [好物推荐]({{ site.baseurl }}/do/2026-10-21-product-recommendations.html)
 
+## 创业
+
+- [做到领域最佳]({{ site.baseurl }}/startup/be-best-to-Y.html)
+
 ## 改变"恶"习
 
 - [恶习]({{ site.baseurl }}/record/e.html)
@@ -71,6 +75,8 @@ title: 我的知识库
 
 ## 思考人生
 
+
+- [保持头脑清醒]({{ site.baseurl }}/do/2026-10-26-stay-clear-headed.html)
 - [成功]({{ site.baseurl }}/living/success.html)
 - [反思]({{ site.baseurl }}/living/reflect.html)
 - [人生]({{ site.baseurl }}/living/life.html)
