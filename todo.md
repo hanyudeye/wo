@@ -108,3 +108,8 @@ todo: 情商
 
 3个窗口，网页github ,AI（下拉） , 朗读，vscode
 分别 设置 快捷键 win+z ,win+x ,win+c
+
+### 11.03
+
+github 哪些仓库有商业价值，个人如何使用能产生价值
+

@@ -71,6 +71,7 @@ title: 我的知识库
 
 ## 思考人生
 
+- [成功]({{ site.baseurl }}/living/success.html)
 - [反思]({{ site.baseurl }}/living/reflect.html)
 - [人生]({{ site.baseurl }}/living/life.html)
 - [学会学习]({{ site.baseurl }}/living/learn.html)
