@@ -79,7 +79,11 @@ title: 我的知识库
 - [职业规划]({{ site.baseurl }}/living/career-planning.html)
 - [简单生活]({{ site.baseurl }}/living/simpleliving.html)
 - [积极乐观，少看负面消息]({{ site.baseurl }}/living/positive.html)
-- [笔记]({{ site.baseurl }}/note.html)
+- [笔记]({{ site.baseurl }}/living/note.html)
+
+## 书籍抄写
+
+- [邻家的百万富翁]({{ site.baseurl }}/books/邻家的百万富翁.html)
 
 ## 写作规范
 
