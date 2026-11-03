@@ -24,11 +24,6 @@ title: 我的知识库
 - [布置厨房]({{ site.baseurl }}/do/2026-10-22-set-up-the-kitchen.html)
 - [改变习惯]({{ site.baseurl }}/do/2026-10-21-change-habits.html)
 - [冰箱除霜]({{ site.baseurl }}/do/2026-9-28-defrose-the-bridge.html)
-
-- [日常生活习惯]({{ site.baseurl }}/do/2026-10-26-daily-schedule.html)
-- [布置厨房]({{ site.baseurl }}/do/2026-10-22-set-up-the-kitchen.html)
-- [改变习惯]({{ site.baseurl }}/do/2026-10-21-change-habits.html)
-- [冰箱除霜]({{ site.baseurl }}/do/2026-9-28-defrose-the-bridge.html)
 - [缝补衣服]({{ site.baseurl }}/do/2026-10-21-mend-clothes.html)
 - [家务活]({{ site.baseurl }}/do/2026-9-10-do-housework.html)
 
@@ -36,6 +31,10 @@ title: 我的知识库
 ## 好物推荐
 
 - [好物推荐]({{ site.baseurl }}/do/2026-10-21-product-recommendations.html)
+
+## 创业
+
+- [做到领域最佳]({{ site.baseurl }}/startup/be-best-to-Y.html)
 
 ## 改变"恶"习
 
@@ -71,13 +70,20 @@ title: 我的知识库
 
 ## 思考人生
 
+
+- [保持头脑清醒]({{ site.baseurl }}/do/2026-10-26-stay-clear-headed.html)
+- [成功]({{ site.baseurl }}/living/success.html)
 - [反思]({{ site.baseurl }}/living/reflect.html)
 - [人生]({{ site.baseurl }}/living/life.html)
 - [学会学习]({{ site.baseurl }}/living/learn.html)
 - [职业规划]({{ site.baseurl }}/living/career-planning.html)
 - [简单生活]({{ site.baseurl }}/living/simpleliving.html)
 - [积极乐观，少看负面消息]({{ site.baseurl }}/living/positive.html)
-- [笔记]({{ site.baseurl }}/note.html)
+- [笔记]({{ site.baseurl }}/living/note.html)
+
+## 书籍抄写
+
+- [邻家的百万富翁]({{ site.baseurl }}/books/邻家的百万富翁.html)
 
 ## 写作规范
 

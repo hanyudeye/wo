@@ -21,6 +21,18 @@ books/       读书笔记
 - 部分 `.md` 文件包含 AI 对话记录或 prompt 模板（如 emacs.md、linux.md 开头是学习教练 prompt）
 - 用 `- ` 无序列表和中文标点，标题用 `##`/`###`
 
+### 文末署名
+
+新笔记默认在文末加右下角署名（纯 Markdown 不支持对齐，用 HTML）：
+
+```html
+<div align="right"><sub>作者：wuming ｜ 2026-11-03</sub></div>
+```
+
+- 日期统一 `YYYY-MM-DD`
+- 需要样式更细时用 `<p align="right" style="color:#888;font-size:0.9em;">…</p>`（Jekyll 生效，GitHub 网页忽略 style）
+- 可选加 front matter `author` / `date` 存元数据；`jekyll-theme-minimal` 不会自动渲染，展示仍靠上面这行 HTML
+
 ## 操作要点
 
 - **没有**构建/测试/lint 系统 — 纯文档仓库，直接提交即可
