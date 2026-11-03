@@ -24,11 +24,6 @@ title: 我的知识库
 - [布置厨房]({{ site.baseurl }}/do/2026-10-22-set-up-the-kitchen.html)
 - [改变习惯]({{ site.baseurl }}/do/2026-10-21-change-habits.html)
 - [冰箱除霜]({{ site.baseurl }}/do/2026-9-28-defrose-the-bridge.html)
-
-- [日常生活习惯]({{ site.baseurl }}/do/2026-10-26-daily-schedule.html)
-- [布置厨房]({{ site.baseurl }}/do/2026-10-22-set-up-the-kitchen.html)
-- [改变习惯]({{ site.baseurl }}/do/2026-10-21-change-habits.html)
-- [冰箱除霜]({{ site.baseurl }}/do/2026-9-28-defrose-the-bridge.html)
 - [缝补衣服]({{ site.baseurl }}/do/2026-10-21-mend-clothes.html)
 - [家务活]({{ site.baseurl }}/do/2026-9-10-do-housework.html)
 
