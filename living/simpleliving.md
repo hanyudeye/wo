@@ -4,8 +4,6 @@
 
 ## 1. 不再追逐成功：一个软件工程师的慢生活转向
 
-- 来源：[I'm no longer chasing success, I want a simple life](https://www.reddit.com/r/simpleliving/comments/1mdxta9/im_no_longer_chasing_success_i_want_a_simple_life/) · r/simpleliving · 高赞帖（另参考同题高赞帖 ["I am no longer chasing success. i just want peace and slow living"](https://www.reddit.com/r/simpleliving/comments/x5jf1e/i_am_no_longer_chasing_success_i_just_want_peace/)，2300+赞）
-
 这个帖子没有断舍离教程，也没有田园牧歌的滤镜，它来自一个真实挣扎的普通人：29岁的软件工程师，住在巴黎，最近换了城市、结了婚、换了工作，生活里的新鲜事一件接一件，但他状态在恶化——早上醒来就累，没有任何由头地处在发怒边缘，连"真正地休息一下"都做不到了。然后他做了一件事：主动降速，回到慢生活。
 
 **核心观点：倦怠的反面不是休息，而是把生活的节奏键从"快进"拨回"常速"。** 帖子里列出的转向动作非常朴素：冥想、慢速拉伸、正念做饭——连洗澡都当成一次全新的体验来做；每天写日记，写着写着上了瘾。他没有辞职、没有搬去山里、没有推翻生活结构，他改的只是做每件事的方式：从"赶完这件事去做下一件"，变成"此刻只有这一件事"。结果是：笑容多了，被淹没的感觉少了，心态整体变好——愤怒还在克服中，但他已经看清了方向。

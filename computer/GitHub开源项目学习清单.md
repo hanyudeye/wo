@@ -54,9 +54,3 @@
 - 用途：系统性的全栈课程（Ruby + 前端 JS），比 freeCodeCamp 更硬核，作业全是实打实的项目，做完简历有东西写。
 - 维护：社区课程团队，无个人作者邮箱
 - 联系：官方 Discord 社区（见项目 README）
-
-## 使用建议
-
-- 入门选 1-2 个就够：**firstcontributions 走一遍 PR + TheAlgorithms/Python 读算法**
-- 进阶跟着 **freeCodeCamp 或 The Odin Project** 挑一条线学到底
-- 别囤清单：收藏 5 个不如啃完 1 个
